@@ -12,7 +12,7 @@ export default function Home() {
     <Container>
       <div className="flex flex-col items-center justify-between min-h-[calc(100vh_-_var(--navigation-height))] p-10 md:p-20 lg:p-24">
         <HeroTitle className="text-transparent bg-clip-text bg-hero-heading-v2 dark:bg-hero-heading-dark pb-2">
-          Let's grow your <br /> business together
+          Let&apos;s grow your <br /> business together
         </HeroTitle>
         {/* <GrowlyticIcon
             className="fill-logo-dark [&_rect]:fill-background"
