@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .button-text-shadow {
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+  }
+
+  .button-text-shadow:hover {
+    text-shadow: rgba(0, 0, 0, 0.56) 0px 3px 12px;
+  }
+
+  ::selection {
+    background-color: rgba(95, 26, 234, 0.949); 
+    color: rgba(22, 22, 22);
+  }
+  
+}
+
+:root {
+  --navigation-height: 4.8rem;
+}
