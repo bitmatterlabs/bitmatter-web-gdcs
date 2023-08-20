@@ -6,6 +6,7 @@ const githubActionsWorkflow = {
     new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}/`),
     ""
   ),
+  repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 
 const siteUrl = githubActionsWorkflow.isActionRunning
