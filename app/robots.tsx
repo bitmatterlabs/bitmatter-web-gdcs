@@ -6,12 +6,11 @@ const githubActionsWorkflow = {
     new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}`),
     ""
   ),
-  repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
-  : "https://gdcservices.ae";
+  ? `/${githubActionsWorkflow.repo}`
+  : "/";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -20,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: `${siteUrl}sitemap.xml`,
   };
 }

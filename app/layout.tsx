@@ -23,9 +23,9 @@ const githubActionsWorkflow = {
 };
 const siteUrl = githubActionsWorkflow.isActionRunning
   ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
-  : "https://gdcservices.ae";
-const appleTouchIcon = `${siteUrl}/favicon/apple-touch-icon.png`;
-const androidIcon512 = `${siteUrl}/android-chrome-512x512.png`;
+  : "https://gdcservices.ae/";
+const appleTouchIcon = `${siteUrl}favicon/apple-touch-icon.png`;
+const androidIcon512 = `${siteUrl}android-chrome-512x512.png`;
 
 export const metadata: Metadata = {
   title: title,

@@ -6,12 +6,11 @@ const githubActionsWorkflow = {
     new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}`),
     ""
   ),
-  repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
-  : "https://gdcservices.ae";
+  ? `/${githubActionsWorkflow.repo}`
+  : "/";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -20,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${siteUrl}/contactus`,
+      url: `${siteUrl}contact-us`,
       lastModified: new Date(),
     },
   ];
