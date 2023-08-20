@@ -16,16 +16,16 @@ const creator = {
 const githubActionsWorkflow = {
   isActionRunning: process.env.GITHUB_ACTIONS || false,
   repo: process.env.GITHUB_REPOSITORY?.toString().replace(
-    new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}`),
+    new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}/`),
     ""
   ),
   repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 const siteUrl = githubActionsWorkflow.isActionRunning
   ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
-  : "https://gdcservices.ae/";
-const appleTouchIcon = `${siteUrl}favicon/apple-touch-icon.png`;
-const androidIcon512 = `${siteUrl}android-chrome-512x512.png`;
+  : "https://gdcservices.ae";
+const appleTouchIcon = `${siteUrl}/favicon/apple-touch-icon.png`;
+const androidIcon512 = `${siteUrl}/android-chrome-512x512.png`;
 
 export const metadata: Metadata = {
   title: title,
