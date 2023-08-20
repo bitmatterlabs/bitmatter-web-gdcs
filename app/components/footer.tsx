@@ -102,7 +102,7 @@ export const Footer = () => {
           <span className="mr-1">
             &copy;{currentYear} GDC Services. Developed & hosted by{" "}
           </span>
-          <Link href="https://bitmatterlabs.com">
+          <Link href="https://bitmatterlabs.com" target="_blank" rel="noreferrer">
             <BitmatterLargeIcon scale={0.048} />
           </Link>
         </div>
