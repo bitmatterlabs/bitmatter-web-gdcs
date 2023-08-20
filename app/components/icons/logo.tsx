@@ -1,10 +1,10 @@
-export const Logo = ({className}: {className?: string}) => (
+export const Logo = ({ className }: { className?: string }) => (
   <svg
     height="18"
     viewBox="0 0 400 100"
     fill="currentColor"
     aria-label="Linear Logotype"
-    className={className}
+    className={"" + (className || "")}
   >
     <path
       fillRule="evenodd"

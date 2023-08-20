@@ -9,10 +9,10 @@ export const GrowlyticFullIcon = ({
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox={"0 0 " + (373.04 * scale) + " " + (222.73 * scale)}
+    viewBox={"0 0 " + 373.04 * scale + " " + 222.73 * scale}
     width={373.04 * scale}
     height={222.73 * scale}
-    className={" " + className}
+    className={"" + (className || "")}
   >
     <g transform={`scale(${scale})`}>
       <path

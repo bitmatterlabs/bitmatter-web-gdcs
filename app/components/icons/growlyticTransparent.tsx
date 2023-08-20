@@ -12,7 +12,7 @@ export const GrowlyticTransparentIcon = ({
     viewBox={"0 0 " + 595.01 * scale + " " + 609.26 * scale}
     width={595.01 * scale}
     height={609.26 * scale}
-    className={" " + className}
+    className={"" + (className || "")}
   >
     <g transform={`scale(${scale})`}>
       <path

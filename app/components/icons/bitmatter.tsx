@@ -14,7 +14,7 @@ export const BitmatterLargeIcon = ({
     viewBox={"0 0 " + 3048.7 * scale + " " + 525.17 * scale}
     width={3048.7 * scale}
     height={525.17 * scale}
-    className={" " + className}
+    className={"" + (className || "")}
   >
     <defs>
       <linearGradient
@@ -25,13 +25,13 @@ export const BitmatterLargeIcon = ({
         gradientTransform="translate(-115.53 273.13) rotate(-45)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#a3d400" />
-        <stop offset="0.05" stop-color="#97d307" />
-        <stop offset="0.29" stop-color="#62cc25" />
-        <stop offset="0.51" stop-color="#38c63d" />
-        <stop offset="0.71" stop-color="#19c24e" />
-        <stop offset="0.88" stop-color="#07c058" />
-        <stop offset="1" stop-color="#00bf5c" />
+        <stop offset="0" stopColor="#a3d400" />
+        <stop offset="0.05" stopColor="#97d307" />
+        <stop offset="0.29" stopColor="#62cc25" />
+        <stop offset="0.51" stopColor="#38c63d" />
+        <stop offset="0.71" stopColor="#19c24e" />
+        <stop offset="0.88" stopColor="#07c058" />
+        <stop offset="1" stopColor="#00bf5c" />
       </linearGradient>
       <linearGradient
         id="b"
