@@ -9,8 +9,8 @@ const githubActionsWorkflow = {
 };
 
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? `/${githubActionsWorkflow.repo}`
-  : "/";
+  ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
+  : "https://gdcservices.ae";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
