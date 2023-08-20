@@ -6,6 +6,7 @@ export const GithubIcon = ({ className }: { className?: string }) => (
     fill="currentColor"
     role="img"
     focusable="false"
+    className={"" + (className || "")}
   >
     <path
       fillRule="evenodd"

@@ -68,7 +68,7 @@ export const Footer = () => {
                 <TwitterIcon />
               </Link>
               <Link href="#">
-                <GithubIcon />
+                <GithubIcon className="fill" />
               </Link>
               <Link href="#">
                 <SlackIcon />
@@ -77,7 +77,10 @@ export const Footer = () => {
           </div>
           <div className="flex flex-wrap">
             {footerLinks.map((column) => (
-              <div key={column.key} className="flex flex-col min-w-[50%] lg:min-w-[11rem] mt-10 lg:mt-0">
+              <div
+                key={column.key}
+                className="flex flex-col min-w-[50%] lg:min-w-[11rem] mt-10 lg:mt-0"
+              >
                 <h3 className="mb-2 font-medium text-md">{column.title}</h3>
                 <ul>
                   {column.links.map((link) => (

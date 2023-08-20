@@ -20,10 +20,10 @@ export default function Home() {
             backgroundColor=""
             scale={0.7}
           /> */}
-          <GrowlyticFullIcon className="fill-background" scale={0.5} color=""/>
-          {/* <ArrowRightCircleIcon /> */}
+        <GrowlyticFullIcon className="fill-background" scale={0.5} color="" />
+        {/* <ArrowRightCircleIcon /> */}
         {/* <GrowlyticTransparentIcon scale={0.2} className="fill-logo" color="" /> */}
-        
+
         {/* <Image src={HeroImage} alt="Hero Image" priority /> */}
 
         {/* <div className="z-10 items-center justify-between w-full max-w-5xl font-mono text-sm lg:flex">
