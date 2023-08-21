@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Header } from "./components/header";
-import { Footer } from "./components/footer";
+import { Header } from "./components/common/header";
+import { Footer } from "./components/common/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -86,6 +86,7 @@ export const metadata: Metadata = {
     description: description,
     images: androidIcon512,
   },
+
 };
 
 export default function RootLayout({
