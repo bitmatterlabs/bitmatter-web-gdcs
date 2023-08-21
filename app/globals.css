@@ -12,10 +12,9 @@
   }
 
   ::selection {
-    background-color: rgba(95, 26, 234, 0.949); 
+    background-color: rgba(95, 26, 234, 0.949);
     color: rgba(22, 22, 22);
   }
-  
 }
 
 :root {

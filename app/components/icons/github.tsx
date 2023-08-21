@@ -6,6 +6,8 @@ export const GithubIcon = ({ className }: { className?: string }) => (
     fill="currentColor"
     role="img"
     focusable="false"
+    className={"" + (className || "")}
+    aria-label="github logo"
   >
     <path
       fillRule="evenodd"

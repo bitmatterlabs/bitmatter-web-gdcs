@@ -30,6 +30,10 @@ const config: Config = {
           "radial-gradient(ellipse 80% 50% at 50% -10%,rgba(25, 118, 210, 0.3), transparent)",
         "page-gradient-dark":
           "radial-gradient(ellipse 80% 50% at 50% -25%,rgba(25, 118, 210, 1), rgb(0, 0, 0))",
+        "slider-fade-right":
+          "linear-gradient(to right,white 0%,rgba(255, 255, 255, 0) 100%)",
+        "slider-fade-left":
+          "linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%)",
       },
       fontSize: {
         "hero-heading": ["5rem", "1"],
@@ -62,6 +66,17 @@ const config: Config = {
       boxShadow: {
         button: "rgba(25, 118, 210, 0.5) 0px 1px 40px",
         "button-dark": "rgba(25, 118, 210, 0.5) 0px 1px 40px",
+      },
+      animation: {
+        ["infinite-slider"]: "infiniteSlider 16s linear infinite",
+      },
+      keyframes: {
+        infiniteSlider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": {
+            transform: "translateX(-114rem)",
+          },
+        },
       },
     },
   },

@@ -1,24 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { Container } from "../components/container";
+import { Container } from "./container";
 import { Button } from "./button";
-import { HambergerIcon } from "./icons/hamberger";
+import { HambergerIcon } from "../icons/hamberger";
 import { useState } from "react";
-import { GrowlyticIcon } from "./icons/growlytic";
+import { GrowlyticOldIcon } from "../icons/growlyticOld";
 
 export const Header = () => {
   const [hambergerMenuIsOpen, setHambergerMenuIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
+    <header className="z-[2] fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
       <Container className="flex items-center h-navigation-height">
         <Link href="/">
-          <GrowlyticIcon
-            className="fill-[white] [&_rect]:fill-background"
-            color=""
-            backgroundColor=""
-          />
+          <GrowlyticOldIcon scale={0.06} />
         </Link>
 
         <div
@@ -74,7 +70,7 @@ export const Header = () => {
             Log in
           </Link>
           <Button href="#" variant="primary" size="md">
-            Sign up
+            Contact Us
           </Button>
 
           <button
