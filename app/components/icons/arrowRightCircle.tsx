@@ -4,6 +4,7 @@ export const ArrowRightCircleIcon = ({ className }: { className?: string }) => (
     viewBox="0 0 24 24"
     fill="currentColor"
     className={"w-6 h-6 " + (className || "")}
+    aria-label="right arrow icon"
   >
     <path
       fillRule="evenodd"

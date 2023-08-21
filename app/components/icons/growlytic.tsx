@@ -15,6 +15,7 @@ export const GrowlyticIcon = ({
     width={245 * scale}
     height={245 * scale}
     className={"" + (className || "")}
+    aria-label="growlytic new logotype"
   >
     <g transform={`scale(${scale})`}>
       <rect width="245" height="245" rx="122.5" fill={backgroundColor} />

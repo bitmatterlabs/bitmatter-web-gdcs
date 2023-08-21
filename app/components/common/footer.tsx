@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Container } from "./container";
-import { TwitterIcon } from "./icons/twittter";
-import { SlackIcon } from "./icons/slack";
-import { GithubIcon } from "./icons/github";
-import { GrowlyticFullIcon } from "./icons/growlyticFull";
-import { BitmatterLargeIcon } from "./icons/bitmatter";
+import { BitmatterFullIcon } from "../icons/bitmatterFull";
+import { MessengerIcon } from "../icons/messenger";
+import { InstagramIcon } from "../icons/instagram";
+import { WhatsappIcon } from "../icons/whatsapp";
+import { GrowlyticOldIcon } from "../icons/growlyticOld";
 
 const footerLinks = [
   {
@@ -58,20 +58,25 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear() || "2023";
 
   return (
-    <footer className="py-6 text-sm border-t border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
+    <footer className="py-3 md:py-5 lg:py-6 text-sm border-t border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <GrowlyticFullIcon className="fill-logo-dark" color="" />
-            <div className="flex space-x-3 [&_a]:text-secondary-dark [&_a:hover]:text-white">
+            <div className="items-center space-x-2 flex flex-wrap">
+              <GrowlyticOldIcon scale={0.12} color="#fff" />
+              <span className="font-normal text-lg block lg:hidden">
+                Growlytic Document Clearing Services
+              </span>
+            </div>
+            <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
               <Link href="#">
-                <TwitterIcon />
+                <MessengerIcon color="" />
               </Link>
               <Link href="#">
-                <GithubIcon className="fill" />
+                <InstagramIcon color="" />
               </Link>
               <Link href="#">
-                <SlackIcon />
+                <WhatsappIcon color="" />
               </Link>
             </div>
           </div>
@@ -102,8 +107,16 @@ export const Footer = () => {
           <span className="mr-1">
             &copy;{currentYear} GDC Services. Developed & hosted by{" "}
           </span>
-          <Link href="https://bitmatterlabs.com" target="_blank" rel="noreferrer">
-            <BitmatterLargeIcon scale={0.048} />
+          <Link
+            href="https://bitmatterlabs.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BitmatterFullIcon
+              scale={0.048}
+              className="fill-secondary-dark hover:fill-white"
+              color=""
+            />
           </Link>
         </div>
       </Container>
