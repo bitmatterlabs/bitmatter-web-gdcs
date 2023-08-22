@@ -12,7 +12,7 @@ export const HeroTitle = ({ children, className }: HeroElementProps) => {
   return (
     <h1
       className={
-        "text-4xl md:text-6xl lg:text-hero-heading font-bold text-center " +
+        "text-5xl md:text-6xl lg:text-7xl font-bold text-center " +
         className
       }
     >
