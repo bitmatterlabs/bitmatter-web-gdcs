@@ -13,7 +13,7 @@ export const HeroTitle = ({ children, className }: HeroElementProps) => {
     <h1
       className={
         "text-5xl md:text-6xl lg:text-7xl font-bold text-center " +
-        className
+        (className || "")
       }
     >
       {children}
@@ -23,10 +23,10 @@ export const HeroTitle = ({ children, className }: HeroElementProps) => {
 
 export const HeroSubtitle = ({ children, className }: HeroElementProps) => {
   return (
-    <p className={"text-hero-sub-heading mb-8 " + className}>{children}</p>
+    <p className={"text-hero-sub-heading " + (className || "")}>{children}</p>
   );
 };
 
 export const Hero = ({ children, className }: HeroProps) => {
-  return <div className={"text-center " + className}>{children}</div>;
+  return <div className={"text-center " + (className || "")}>{children}</div>;
 };

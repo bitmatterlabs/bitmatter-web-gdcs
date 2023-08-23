@@ -11,7 +11,7 @@ export const Header = () => {
   const [hambergerMenuIsOpen, setHambergerMenuIsOpen] = useState(false);
 
   return (
-    <header className="z-[2] fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
+    <header className="z-[3] fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
       <Container className="flex items-center h-navigation-height">
         <Link href="/">
           <GrowlyticOldIcon scale={0.06} />
