@@ -32,7 +32,7 @@ export default function Home() {
             Growlytic Document Clearing Services lets you blah blah
           </HeroSubtitle>
         </div>
-        <BrandSlider pauseOnHover={false} className="" />
+        <BrandSlider pauseOnHover={true} className="" />
         {/* <GrowlyticOldIcon scale={0.3} className="border border-blue-500" /> */}
       </div>
       <Supergirl scale={0.2} className="absolute z-[2] scale-[1.1] md:scale-[1.2] lg:scale-[1.3] top-1/2 transform -translate-y-1/2 right-0 translate-x-[13rem] md:translate-x-[12rem] lg:translate-x-[10rem]" />
