@@ -64,7 +64,7 @@ export const Footer = () => {
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
             <div className="items-center space-x-2 flex flex-wrap">
               <GrowlyticOldIcon scale={0.12} color="#fff" />
-              <span className="font-normal text-lg block lg:hidden">
+              <span className="font-normal text-lg hidden">
                 Growlytic Document Clearing Services
               </span>
             </div>
