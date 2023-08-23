@@ -65,7 +65,7 @@ export const Header = () => {
         <div className="flex items-center h-full ml-auto">
           <Link
             href="#"
-            className="mx-4 text-md truncate transition-colors hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+            className="mx-4 truncate transition-colors text-md hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
           >
             Log in
           </Link>

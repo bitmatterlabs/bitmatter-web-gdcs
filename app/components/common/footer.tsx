@@ -58,13 +58,13 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear() || "2023";
 
   return (
-    <footer className="py-3 md:py-5 lg:py-6 text-sm border-t border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
+    <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <div className="items-center space-x-2 flex flex-wrap">
+            <div className="flex flex-wrap items-center space-x-2">
               <GrowlyticOldIcon scale={0.12} color="#fff" />
-              <span className="font-normal text-lg hidden">
+              <span className="hidden text-lg font-normal">
                 Growlytic Document Clearing Services
               </span>
             </div>
@@ -103,7 +103,7 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center w-full justify-center pt-3 text-slate-300 text-sm">
+        <div className="flex items-center justify-center w-full pt-3 text-sm text-slate-300">
           <span className="mr-1">
             &copy;{currentYear} GDC Services. Developed & hosted by{" "}
           </span>

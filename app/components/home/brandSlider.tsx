@@ -108,7 +108,7 @@ export const BrandSlider = ({
 
   return (
     <div className={`w-full overflow-hidden ${className || ""}`}>
-      <p className="font-medium text-center my-2">UAE government bodies we work with</p>
+      <p className="my-2 font-medium text-center">UAE government bodies we work with</p>
       {pauseOnHover ? (
         <div className="h-[3rem] [&_div]:mr-[1rem] md:[&_div]:mr-[1.7rem] md:h-[6rem] lg:h-[8rem] relative w-full overflow-hidden bg-transparent before:absolute before:left-0 before:top-0 before:z-[1] before:h-full before:w-[100px] before:bg-slider-fade-left before:content-[''] after:absolute after:right-0 after:top-0 after:z-[1] after:h-full after:w-[100px] after:-scale-x-100 after:bg-slider-fade-right after:content-[''] [&_div]:flex [&_div]:items-center [&_div]:justify-center [&_div]:h-full lg:[&_div]:mr-[3rem]">
           <Ticker
@@ -119,7 +119,7 @@ export const BrandSlider = ({
           >
             {slideList.map((item, index) => (
               <div
-                className="slide grayscale hover:grayscale-0 transition-grayscale duration-300"
+                className="duration-300 slide grayscale hover:grayscale-0 transition-grayscale"
                 key={index}
               >
                 {item.slide}
