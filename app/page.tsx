@@ -101,11 +101,10 @@ export default function Home() {
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
-            Explore a spectrum of services designed to
-            shape your business destiny. From commercial and industrial
-            licensing to tapping into Dubai&apos;s booming tourism industry, GDC
-            Services equips you with the tools you need to thrive. Your success
-            story starts here.
+            Explore a spectrum of services designed to shape your business
+            destiny. From commercial and industrial licensing to tapping into
+            Dubai&apos;s booming tourism industry, GDC Services equips you with
+            the tools you need to thrive. Your success story starts here.
           </SectionSubtitle>
           <ExpandingLink
             textClassName="border border-2 border-background"
@@ -116,37 +115,40 @@ export default function Home() {
           </ExpandingLink>
           <div className="w-full md:w-[80vw] lg:w-[70vw]">
             <p>
-              Company Setup: Title: &ldquo;Building Your Business Base&rdquo; Description:
-              &ldquo;Ready to turn your ideas into a flourishing enterprise? GDC
-              Services offers comprehensive solutions for company setup in
-              Dubai. Our expertise spans across jurisdictions, ensuring a smooth
-              journey as you establish your business presence.&rdquo;
+              Company Setup: Title: &ldquo;Building Your Business Base&rdquo;
+              Description: &ldquo;Ready to turn your ideas into a flourishing
+              enterprise? GDC Services offers comprehensive solutions for
+              company setup in Dubai. Our expertise spans across jurisdictions,
+              ensuring a smooth journey as you establish your business
+              presence.&rdquo;
             </p>{" "}
             <p>
-              10 Year Visa: Title: &ldquo;Securing Your Future&rdquo; Description: &ldquo;Settle
-              into the future with confidence through UAE&apos;s 10-Year Golden Visa.
-              Join the league of visionary investors, and enjoy the freedom to
-              thrive. GDC Services is your gateway to securing a long-term
-              residency that aligns with your business ambitions.&rdquo;
+              10 Year Visa: Title: &ldquo;Securing Your Future&rdquo;
+              Description: &ldquo;Settle into the future with confidence through
+              UAE&apos;s 10-Year Golden Visa. Join the league of visionary
+              investors, and enjoy the freedom to thrive. GDC Services is your
+              gateway to securing a long-term residency that aligns with your
+              business ambitions.&rdquo;
             </p>
           </div>
         </div>
       </Container>
-      <Container id="company" className="bg-hero-heading-blue relative overflow-x-hidden">
+      <Container
+        id="company"
+        className="bg-hero-heading-blue relative overflow-x-hidden"
+      >
         <div className="flex flex-col items-center justify-start py-navigation-height text-white">
-          <SectionTitle
-            className={`${poppinsSectionTitle.className}`}
-          >
+          <SectionTitle className={`${poppinsSectionTitle.className}`}>
             {/* <SparklesIcon className="inline-block w-6 h-6 mr-2" /> */}
             Our Story, Your Success
           </SectionTitle>
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-normal`}
           >
-            GDC Services is your gateway to streamlined
-            business setup in Dubai, UAE. Our journey since 2020 has been marked
-            by enabling countless entrepreneurs to conquer challenges and seize
-            opportunities. Join us to realize your business ambitions.
+            GDC Services is your gateway to streamlined business setup in Dubai,
+            UAE. Our journey since 2020 has been marked by enabling countless
+            entrepreneurs to conquer challenges and seize opportunities. Join us
+            to realize your business ambitions.
           </SectionSubtitle>
           <ExpandingLink
             textClassName="border border-2 border-background"
@@ -155,13 +157,15 @@ export default function Home() {
           >
             Hi
           </ExpandingLink>
-
-          <p>
-            Meet the Visionaries: Behind GDC&apos;s success story stands a dynamic
-            team of experts and visionaries. Led by passionate leaders with deep
-            market insights, we&apos;re dedicated to simplifying your business
-            journey. Experience unmatched guidance and commitment.
-          </p>
+          <div className="w-full md:w-[80vw] lg:w-[70vw]">
+            <p>
+              Meet the Visionaries: Behind GDC&apos;s success story stands a
+              dynamic team of experts and visionaries. Led by passionate leaders
+              with deep market insights, we&apos;re dedicated to simplifying
+              your business journey. Experience unmatched guidance and
+              commitment.
+            </p>
+          </div>
         </div>
       </Container>
       <Container id="contact" className="bg-page-gradient">
@@ -188,11 +192,13 @@ export default function Home() {
           >
             Hi
           </ExpandingLink>
-          <p>
-            Address: GDC #604, A-Block, Business Village, Near Diera Clock
-            Tower, Dubai, UAE Tel: +971 4370 3904 Email:
-            growlyticservices@gmail.com
-          </p>
+          <div className="w-full md:w-[80vw] lg:w-[70vw]">
+            <p>
+              Address: GDC #604, A-Block, Business Village, Near Diera Clock
+              Tower, Dubai, UAE Tel: +971 4370 3904 Email:
+              growlyticservices@gmail.com
+            </p>
+          </div>
         </div>
       </Container>
       <ScrollToTop
