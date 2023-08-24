@@ -21,7 +21,7 @@ export const ScrollToTop = ({ className, offSet = 0 }: { className?: string, off
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [offSet]);
 
   return (
     <Link
