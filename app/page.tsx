@@ -103,7 +103,7 @@ export default function Home() {
           >
             Explore a spectrum of services designed to
             shape your business destiny. From commercial and industrial
-            licensing to tapping into Dubai's booming tourism industry, GDC
+            licensing to tapping into Dubai&apos;s booming tourism industry, GDC
             Services equips you with the tools you need to thrive. Your success
             story starts here.
           </SectionSubtitle>
@@ -116,18 +116,18 @@ export default function Home() {
           </ExpandingLink>
           <div className="w-full md:w-[80vw] lg:w-[70vw]">
             <p>
-              Company Setup: Title: "Building Your Business Base" Description:
-              "Ready to turn your ideas into a flourishing enterprise? GDC
+              Company Setup: Title: &ldquo;Building Your Business Base&rdquo; Description:
+              &ldquo;Ready to turn your ideas into a flourishing enterprise? GDC
               Services offers comprehensive solutions for company setup in
               Dubai. Our expertise spans across jurisdictions, ensuring a smooth
-              journey as you establish your business presence."
+              journey as you establish your business presence.&rdquo;
             </p>{" "}
             <p>
-              10 Year Visa: Title: "Securing Your Future" Description: "Settle
-              into the future with confidence through UAE's 10-Year Golden Visa.
+              10 Year Visa: Title: &ldquo;Securing Your Future&rdquo; Description: &ldquo;Settle
+              into the future with confidence through UAE&apos;s 10-Year Golden Visa.
               Join the league of visionary investors, and enjoy the freedom to
               thrive. GDC Services is your gateway to securing a long-term
-              residency that aligns with your business ambitions."
+              residency that aligns with your business ambitions.&rdquo;
             </p>
           </div>
         </div>
@@ -157,9 +157,9 @@ export default function Home() {
           </ExpandingLink>
 
           <p>
-            Meet the Visionaries: Behind GDC's success story stands a dynamic
+            Meet the Visionaries: Behind GDC&apos;s success story stands a dynamic
             team of experts and visionaries. Led by passionate leaders with deep
-            market insights, we're dedicated to simplifying your business
+            market insights, we&apos;re dedicated to simplifying your business
             journey. Experience unmatched guidance and commitment.
           </p>
         </div>
@@ -177,7 +177,7 @@ export default function Home() {
           >
             Unlocking Possibilities: Explore a spectrum of services designed to
             shape your business destiny. From commercial and industrial
-            licensing to tapping into Dubai's booming tourism industry, GDC
+            licensing to tapping into Dubai&apos;s booming tourism industry, GDC
             Services equips you with the tools you need to thrive. Your success
             story starts here.
           </SectionSubtitle>
