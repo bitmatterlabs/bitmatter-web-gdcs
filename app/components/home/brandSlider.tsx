@@ -7,6 +7,8 @@ import rera from "../images/sliderLogos/rera.png";
 import dm from "../images/sliderLogos/dm.png";
 import th from "../images/sliderLogos/th.png";
 import Image from "next/image";
+import { Label } from "../common/label";
+import { AwardIcon } from "../icons/award";
 
 const slides = [
   {
@@ -107,8 +109,22 @@ export const BrandSlider = ({
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className={`w-full overflow-hidden [&_img]:select-none [&_img]:pointer-events-none ${className || ""}`}>
-      <p className="py-2 font-medium text-center">UAE government bodies we work with</p>
+    <div
+      className={`w-full overflow-hidden [&_img]:select-none [&_img]:pointer-events-none ${
+        className || ""
+      }`}
+    >
+      <Label
+        icon={
+          <AwardIcon
+            strokeWidth={0.2}
+            className="w-3 h-3"
+            color="#fff"
+          />
+        }
+      >
+        UAE government bodies we work with
+      </Label>
       {pauseOnHover ? (
         <div className="h-[3rem] [&_div]:mr-[1rem] md:[&_div]:mr-[1.7rem] md:h-[6rem] lg:h-[8rem] relative w-full overflow-hidden bg-transparent before:absolute before:left-0 before:top-0 before:z-[1] before:h-full before:w-[100px] before:bg-slider-fade-left before:content-[''] after:absolute after:right-0 after:top-0 after:z-[1] after:h-full after:w-[100px] after:-scale-x-100 after:bg-slider-fade-right after:content-[''] [&_div]:flex [&_div]:items-center [&_div]:justify-center [&_div]:h-full lg:[&_div]:mr-[3rem]">
           <Ticker

@@ -35,6 +35,7 @@ const config: Config = {
           "linear-gradient(to right,white 0%,rgba(255, 255, 255, 0) 100%)",
         "slider-fade-left":
           "linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%)",
+        "gradient-sub-heading": "linear-gradient(to right, #1f93ff, #8b5cf6)",
       },
       fontSize: {
         "hero-heading": ["5rem", "1"],

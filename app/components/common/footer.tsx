@@ -5,19 +5,17 @@ import { MessengerIcon } from "../icons/messenger";
 import { InstagramIcon } from "../icons/instagram";
 import { WhatsappIcon } from "../icons/whatsapp";
 import { GrowlyticOldIcon } from "../icons/growlyticOld";
+import { ExpandingLink } from "./expandingLink";
 
 const footerLinks = [
   {
-    title: "Product",
+    title: "Services",
     key: "head-0",
     links: [
-      { title: "Features", href: "#", key: "head-0-link-0" },
-      { title: "Integrations", href: "#", key: "head-0-link-1" },
-      { title: "Pricing", href: "#", key: "head-0-link-2" },
-      { title: "Changelog", href: "#", key: "head-0-link-3" },
-      { title: "Docs", href: "#", key: "head-0-link-4" },
-      { title: "Linear Method", href: "#", key: "head-0-link-5" },
-      { title: "Downloads", href: "#", key: "head-0-link-6" },
+      { title: "Mainland", href: "#", key: "head-0-link-0" },
+      { title: "Offshore", href: "#", key: "head-0-link-1" },
+      { title: "Licensing", href: "#", key: "head-0-link-2" },
+      { title: "Startups", href: "#", key: "head-0-link-3" },
     ],
   },
   {
@@ -25,10 +23,8 @@ const footerLinks = [
     key: "head-1",
     links: [
       { title: "About us", href: "#", key: "head-1-link-0" },
-      { title: "Blog", href: "#", key: "head-1-link-1" },
-      { title: "Careers", href: "#", key: "head-1-link-2" },
-      { title: "Customers", href: "#", key: "head-1-link-3" },
-      { title: "Brand", href: "#", key: "head-1-link-4" },
+      { title: "Contact us", href: "#", key: "head-1-link-1" },
+      { title: "Management", href: "#", key: "head-1-link-2" },
     ],
   },
   {
@@ -43,15 +39,6 @@ const footerLinks = [
       { title: "Report a vulnerability", href: "#", key: "head-2-link-5" },
     ],
   },
-  {
-    title: "Developers",
-    key: "head-3",
-    links: [
-      { title: "API", href: "#", key: "head-3-link-1" },
-      { title: "Status", href: "#", key: "head-3-link-2" },
-      { title: "GitHub", href: "#", key: "head-3-link-3" },
-    ],
-  },
 ];
 
 export const Footer = () => {
@@ -60,7 +47,7 @@ export const Footer = () => {
   return (
     <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
       <Container className="flex flex-col space-y-5">
-        <div className="flex flex-col justify-between lg:flex-row">
+        <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
             <div className="flex flex-wrap items-center space-x-2">
               <GrowlyticOldIcon scale={0.12} color="#fff" />

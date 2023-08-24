@@ -86,7 +86,6 @@ export const metadata: Metadata = {
     description: description,
     images: androidIcon512,
   },
-
 };
 
 export default function RootLayout({
@@ -95,13 +94,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta name="robots" content="index, follow" />
       </head>
       <body
+        id="hero"
         className={
-          "text-primary bg-page-gradient dark:text-primary-dark dark:bg-body-dark " +
+          "text-primary dark:text-primary-dark dark:bg-body-dark " +
           inter.className
         }
       >
