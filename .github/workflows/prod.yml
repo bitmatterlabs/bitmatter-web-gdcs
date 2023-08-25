@@ -1,4 +1,4 @@
-name: Deploy Next.js site to Pages
+name: prod_deployment
 
 on:
   pull_request:

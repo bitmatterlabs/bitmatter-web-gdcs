@@ -5,7 +5,6 @@ import { MessengerIcon } from "../icons/messenger";
 import { InstagramIcon } from "../icons/instagram";
 import { WhatsappIcon } from "../icons/whatsapp";
 import { GrowlyticOldIcon } from "../icons/growlyticOld";
-import { ExpandingLink } from "./expandingLink";
 
 const footerLinks = [
   {
@@ -55,16 +54,25 @@ export const Footer = () => {
                 Growlytic Document Clearing Services
               </span>
             </div>
-            <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
-              <Link href="#">
-                <MessengerIcon color="" />
-              </Link>
-              <Link href="#">
-                <InstagramIcon color="" />
-              </Link>
-              <Link href="#">
-                <WhatsappIcon color="" />
-              </Link>
+            <div className="flex flex-col justify-center space-y-2">
+              <p className="text-secondary-dark">
+                GDC Services, # 604,
+                <br />
+                A-Block, Business Village,
+                <br />
+                Near Diera Clock Tower, Dubai, UAE
+              </p>
+              <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
+                <Link href="#">
+                  <MessengerIcon color="" />
+                </Link>
+                <Link href="#">
+                  <InstagramIcon color="" />
+                </Link>
+                <Link href="#">
+                  <WhatsappIcon color="" />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="flex flex-wrap">

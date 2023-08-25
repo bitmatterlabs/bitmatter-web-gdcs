@@ -8,6 +8,11 @@ interface SectionElementProps {
   className?: string;
 }
 
+interface SectionBodyProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
 export const SectionTitle = ({ children, className }: SectionElementProps) => {
   return (
     <h1
@@ -15,9 +20,7 @@ export const SectionTitle = ({ children, className }: SectionElementProps) => {
         className || ""
       }`}
     >
-      <span className="flex items-center justify-start whitespace-nowrap">
-        {children}
-      </span>
+      <span className="flex items-center justify-start">{children}</span>
     </h1>
   );
 };
@@ -28,12 +31,20 @@ export const SectionSubtitle = ({
 }: SectionElementProps) => {
   return (
     <p
-      className={`text-xl font-medium text-left w-full md:w-[80vw] lg:w-[70vw] pb-3 ${
+      className={`text-xl font-medium text-left w-full md:w-[80vw] lg:w-[70vw] pb-6 ${
         className || ""
       }`}
     >
       {children}
     </p>
+  );
+};
+
+export const SectionBody = ({ children, className }: SectionElementProps) => {
+  return (
+    <div className={`w-full md:w-[80vw] lg:w-[70vw] pb-5 ${className || ""}`}>
+      {children}
+    </div>
   );
 };
 

@@ -2,8 +2,6 @@
 
 import { HeroSubtitle, HeroTitle } from "./components/home/hero";
 import { Container } from "./components/common/container";
-import { GrowlyticOldIcon } from "./components/icons/growlyticOld";
-import { ArrowRightCircleIcon } from "./components/icons/arrowRightCircle";
 import { Poppins } from "next/font/google";
 import { BrandSlider } from "./components/home/brandSlider";
 import { Supergirl } from "./components/images/assets/supergirl";
@@ -12,13 +10,14 @@ import Link from "next/link";
 import { ExpandingLink } from "./components/common/expandingLink";
 import { ScrollToTop } from "./components/common/scrollToTop";
 import {
+  SectionBody,
   SectionSubtitle,
   SectionTitle,
 } from "./components/common/sectionTitle";
-import { ShieldCheckIcon } from "./components/icons/shieldCheck";
-import { RocketLaunchIcon } from "./components/icons/rocketLaunch";
-import { SparklesIcon } from "./components/icons/sparkles";
+import { CallingGirl } from "./components/images/assets/callingGirl";
+import { ContactSection } from "./components/home/contactDetails";
 import { ChatBubbleBottomCenterTextIcon } from "./components/icons/chatBubbleBottomCenterText";
+import { CompanyStatsSection } from "./components/home/companyStats";
 
 const poppinsHeroTitle = Poppins({
   subsets: ["latin"],
@@ -66,13 +65,13 @@ export default function Home() {
               className={`px-2 py-5 md:px-10 lg:px-20 text-[1rem] md:text-[1.1rem] lg:text-xl font-medium ${poppinsHeroSubtitle.className}`}
             >
               Empower Your Business with{" "}
-              <Link href="#company" className="group/link">
-                <span className="font-[600] group-hover/link:text-[#90A4AE]">
+              <Link href="#company" className="group/link focus:outline-none">
+                <span className="font-[600] group-hover/link:text-[#90A4AE] group-focus/link:text-[#90A4AE]">
                   Growlytic Document Clearing Services
                 </span>
                 <span className="">
                   <LinkIcon
-                    className="inline-block w-[1.9rem] h-[1.9rem] mb-[0.25rem] p-[0.2rem] group-hover/link:fill-[#90A4AE]"
+                    className="inline-block w-[1.9rem] h-[1.9rem] mb-[0.25rem] p-[0.2rem] group-hover/link:fill-[#90A4AE] group-focus/link:fill-[#90A4AE]"
                     strokeWidth={0.2}
                     color=""
                   />
@@ -96,24 +95,27 @@ export default function Home() {
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
           >
             {/* <ShieldCheckIcon className="inline-block w-6 h-6 mr-2" /> */}
-            Unlocking Possibilities
+            Limitless Possibilities
           </SectionTitle>
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
-            Explore a spectrum of services designed to shape your business
-            destiny. From commercial and industrial licensing to tapping into
-            Dubai&apos;s booming tourism industry, GDC Services equips you with
-            the tools you need to thrive. Your success story starts here.
+            Explore a spectrum of <span className="font-bold">services</span>{" "}
+            designed to shape your business destiny. From commercial and
+            industrial licensing to tapping into Dubai&apos;s booming tourism
+            industry, GDC Services equips you with the tools you need to thrive.
+            Your success story starts here.
           </SectionSubtitle>
-          <ExpandingLink
-            textClassName="border border-2 border-background"
-            href="#"
-            size={"md"}
-          >
-            Hi
-          </ExpandingLink>
-          <div className="w-full md:w-[80vw] lg:w-[70vw]">
+          <SectionBody>
+            <div className="grid grid-cols-4 gap-4 [&_div]:bg-[#ECEFF1] [&_div]:flex [&_div]:justify-between [&_div]:p-2 [&_div]:rounded-[0.375rem] [&_div]:border">
+              <div>aas</div>
+              <div>09</div>
+              <div>01</div>
+              <div>09</div>
+              <div>01</div>
+              <div>09</div>
+              <div>01</div>
+            </div>
             <p>
               Company Setup: Title: &ldquo;Building Your Business Base&rdquo;
               Description: &ldquo;Ready to turn your ideas into a flourishing
@@ -130,15 +132,64 @@ export default function Home() {
               gateway to securing a long-term residency that aligns with your
               business ambitions.&rdquo;
             </p>
-          </div>
+          </SectionBody>
         </div>
       </Container>
-      <Container
-        id="company"
-        className="bg-hero-heading-blue relative overflow-x-hidden"
-      >
-        <div className="flex flex-col items-center justify-start py-navigation-height text-white">
-          <SectionTitle className={`${poppinsSectionTitle.className}`}>
+      <Container id="pricing" className="bg-page-gradient">
+        <div className="flex flex-col items-center justify-start py-navigation-height">
+          <SectionTitle
+            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+          >
+            {/* <ShieldCheckIcon className="inline-block w-6 h-6 mr-2" /> */}
+            Our Pricing
+          </SectionTitle>
+          <SectionSubtitle
+            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
+          >
+            Explore a spectrum of services designed to shape your business
+            destiny. From commercial and industrial licensing to tapping into
+            Dubai&apos;s booming tourism industry, GDC Services equips you with
+            the tools you need to thrive. Your success story starts here.
+          </SectionSubtitle>
+          {/* <ExpandingLink
+            textClassName="border border-2 border-background"
+            href="#"
+            size={"md"}
+          >
+            Hi
+          </ExpandingLink> */}
+          <SectionBody>
+            <div className="grid grid-cols-4 gap-4 border">
+              <div className="border">01</div>
+              <div className="border">09</div>
+              <div className="border">01</div>
+              <div className="border">09</div>
+              <div className="border">01</div>
+              <div className="border">09</div>
+              <div className="border">01</div>
+            </div>
+            <p>
+              Company Setup: Title: &ldquo;Building Your Business Base&rdquo;
+              Description: &ldquo;Ready to turn your ideas into a flourishing
+              enterprise? GDC Services offers comprehensive solutions for
+              company setup in Dubai. Our expertise spans across jurisdictions,
+              ensuring a smooth journey as you establish your business
+              presence.&rdquo;
+            </p>{" "}
+            <p>
+              10 Year Visa: Title: &ldquo;Securing Your Future&rdquo;
+              Description: &ldquo;Settle into the future with confidence through
+              UAE&apos;s 10-Year Golden Visa. Join the league of visionary
+              investors, and enjoy the freedom to thrive. GDC Services is your
+              gateway to securing a long-term residency that aligns with your
+              business ambitions.&rdquo;
+            </p>
+          </SectionBody>
+        </div>
+      </Container>
+      <Container id="company" className="bg-hero-heading-blue">
+        <div className="flex flex-col items-center justify-start text-white py-navigation-height">
+          <SectionTitle className={`${poppinsSectionSubtitle.className}`}>
             {/* <SparklesIcon className="inline-block w-6 h-6 mr-2" /> */}
             Our Story, Your Success
           </SectionTitle>
@@ -150,14 +201,15 @@ export default function Home() {
             entrepreneurs to conquer challenges and seize opportunities. Join us
             to realize your business ambitions.
           </SectionSubtitle>
-          <ExpandingLink
+          {/* <ExpandingLink
             textClassName="border border-2 border-background"
             href="#"
             size={"md"}
           >
             Hi
-          </ExpandingLink>
-          <div className="w-full md:w-[80vw] lg:w-[70vw]">
+          </ExpandingLink> */}
+          <SectionBody>
+            <CompanyStatsSection />
             <p>
               Meet the Visionaries: Behind GDC&apos;s success story stands a
               dynamic team of experts and visionaries. Led by passionate leaders
@@ -165,7 +217,7 @@ export default function Home() {
               your business journey. Experience unmatched guidance and
               commitment.
             </p>
-          </div>
+          </SectionBody>
         </div>
       </Container>
       <Container id="contact" className="bg-page-gradient">
@@ -173,32 +225,24 @@ export default function Home() {
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
           >
-            {/* <ChatBubbleBottomCenterTextIcon className="inline-block w-6 h-6 mr-2" /> */}
             Get in touch
           </SectionTitle>
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
-            Unlocking Possibilities: Explore a spectrum of services designed to
-            shape your business destiny. From commercial and industrial
-            licensing to tapping into Dubai&apos;s booming tourism industry, GDC
-            Services equips you with the tools you need to thrive. Your success
-            story starts here.
+            Wherever you are, we&apos;re only a single phone call away. Give us
+            a ring when you&apos;re ready to take your business to the next
+            level.
           </SectionSubtitle>
-          <ExpandingLink
-            textClassName="border border-2 border-background"
-            href="#"
-            size={"md"}
-          >
-            Hi
-          </ExpandingLink>
-          <div className="w-full md:w-[80vw] lg:w-[70vw]">
-            <p>
-              Address: GDC #604, A-Block, Business Village, Near Diera Clock
-              Tower, Dubai, UAE Tel: +971 4370 3904 Email:
-              growlyticservices@gmail.com
-            </p>
-          </div>
+          <SectionBody>
+            <div className="flex flex-col-reverse items-center w-full space-y-5 md:flex-row-reverse md:space-y-0">
+              <ContactSection />
+              <CallingGirl
+                scale={0.15}
+                className="hidden md:block w-[40%] scale-y-[1.7] scale-x-[-1.7] h-full"
+              />
+            </div>
+          </SectionBody>
         </div>
       </Container>
       <ScrollToTop
