@@ -26,7 +26,7 @@ const expandingLinkClasses = cva(
   }
 );
 
-export const ExpandingLink = ({
+export const  ExpandingLink = ({
   children,
   textClassName,
   iconClassName,

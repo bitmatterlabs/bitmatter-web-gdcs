@@ -14,7 +14,7 @@ export const Header = () => {
     <header className="z-[3] fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
       <Container className="flex items-center h-navigation-height">
         <Link
-          href="#hero"
+          href="/"
           onClick={() => setHambergerMenuIsOpen(false)}
           className="focus:outline-none"
         >
@@ -43,7 +43,7 @@ export const Header = () => {
             >
               <li>
                 <Link
-                  href="#services"
+                  href="/services"
                   onClick={() => setHambergerMenuIsOpen(false)}
                 >
                   Services
@@ -51,7 +51,7 @@ export const Header = () => {
               </li>
               <li>
                 <Link
-                  href="#pricing"
+                  href="/pricing"
                   onClick={() => setHambergerMenuIsOpen(false)}
                 >
                   Pricing
@@ -59,15 +59,15 @@ export const Header = () => {
               </li>
               <li>
                 <Link
-                  href="#company"
+                  href="/about"
                   onClick={() => setHambergerMenuIsOpen(false)}
                 >
-                  Company
+                  About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#contact"
+                  href="/contact"
                   onClick={() => setHambergerMenuIsOpen(false)}
                 >
                   Contact
@@ -78,7 +78,7 @@ export const Header = () => {
         </div>
 
         <div className="flex items-center h-full ml-auto">
-          <Button href="#contact" variant="primary" size="md">
+          <Button href="/contact" variant="primary" size="md">
             Talk to an Expert
           </Button>
 

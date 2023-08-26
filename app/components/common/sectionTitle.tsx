@@ -16,7 +16,7 @@ interface SectionBodyProps {
 export const SectionTitle = ({ children, className }: SectionElementProps) => {
   return (
     <h1
-      className={`text-3xl md:text-4xl lg:text-5xl font-semibold text-left pt-5 pb-3 w-full md:w-[80vw] lg:w-[70vw] ${
+      className={`text-3xl md:text-4xl lg:text-5xl text-left pt-5 pb-3 w-full md:w-[80vw] lg:w-[70vw] ${
         className || ""
       }`}
     >
@@ -31,7 +31,7 @@ export const SectionSubtitle = ({
 }: SectionElementProps) => {
   return (
     <p
-      className={`text-xl font-medium text-left w-full md:w-[80vw] lg:w-[70vw] pb-6 ${
+      className={`text-xl font-medium text-left w-full md:w-[80vw] lg:w-[70vw] pb-4 ${
         className || ""
       }`}
     >

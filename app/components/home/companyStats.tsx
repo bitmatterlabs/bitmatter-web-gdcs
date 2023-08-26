@@ -1,79 +1,41 @@
-import Link from "next/link";
-import { AtIcon } from "../icons/at";
-import { CommentAltMessageIcon } from "../icons/commentAltMessage";
-import { MailIcon } from "../icons/mail";
-import { PhoneIcon } from "../icons/phone";
-
 const companyStats = [
   {
-    key: "contact-0",
-    link: false,
-    linkContent: "",
-    title: "Address",
-    mainClassName: "lg:col-span-2",
-    titleClassName: "font-bold",
-    image: <MailIcon color="" />,
-    contentClassName: "",
-    content: (
-      <>
-        GDC Services
-        <br /># 604, A-Block,
-        <br />
-        Business Village,
-        <br />
-        Near Diera Clock Tower,
-        <br />
-        Dubai, UAE
-      </>
-    ),
-  },
-  {
     key: "contact-1",
-    link: true,
-    linkContent: "mailto:growlyticservices@gmail.com",
-    title: "Inquiries",
-    mainClassName: "lg:col-span-2 ",
-    titleClassName: "font-bold",
-    image: <AtIcon color="" />,
-    contentClassName: "",
-    content: "growlyticservices@gmail.com",
+    title: "Since",
+    mainClassName: "",
+    titleClassName: "font-medium text-lg",
+    contentClassName: "font-bold text-4xl",
+    content: "2020",
   },
   {
     key: "contact-2",
-    link: true,
-    linkContent: "https://wa.me/97143703904",
-    title: "WhatsApp",
+    title: "Trusted Clients",
     mainClassName: "",
-    titleClassName: "font-bold",
-    image: <CommentAltMessageIcon color="" />,
-    contentClassName: "",
-    content: "+971 4370 3904",
+    titleClassName: "font-medium text-lg",
+    contentClassName: "font-bold text-4xl",
+    content: "30+",
   },
   {
     key: "contact-3",
-    link: true,
-    linkContent: "tel:+97143703904",
-    title: "Phone",
+    title: "Unique Services",
     mainClassName: "",
-    titleClassName: "font-bold",
-    image: <PhoneIcon color="" />,
-    contentClassName: "",
-    content: "+971 4370 3904",
+    titleClassName: "font-medium text-lg",
+    contentClassName: "font-bold text-4xl",
+    content: "20+",
   },
 ];
 
-export const CompanyStatsSection = () => {
+export const CompanyStatsSection = ({ className }: { className?: string }) => {
   return (
-    <div className="w-full flex-grow grid grid-cols-1 lg:grid-cols-3 gap-4 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:relative [&_a]:relative [&_div]:flex-col [&_a]:flex-col [&_div]:space-y-4 [&_a]:space-y-4 [&_div]:items-start [&_a]:items-start [&_a]:bg-[#ECEFF1] [&_a:hover]:bg-hero-heading-blue [&_div]:bg-[#ECEFF1] [&_div:hover]:bg-hero-heading-blue [&_div:hover]:text-white [&_a:hover]:text-white text-black [&_div]:justify-between [&_a]:justify-between [&_div]:p-2 [&_a]:p-2 [&_div]:rounded-[0.375rem] [&_a]:rounded-[0.375rem] font-medium [&_div]:border [&_a]:border [&_div]:overflow-hidden [&_a]:overflow-hidden [&_svg]:-bottom-6 [&_svg]:z-[0] [&_p]:z-[1] [&_svg]:fill-[#CFD8DC] [&_svg]:-right-5 [&_svg]:w-[10rem] [&_svg]:aspect-square [&_svg]:absolute">
-      {companyStats.map((contactMethod) => (
-        <div key={contactMethod.key} className={contactMethod.mainClassName}>
-          <p className={` ${contactMethod.titleClassName}`}>
-            {contactMethod.title}
-          </p>
-          <p className={` ${contactMethod.contentClassName}`}>
-            {contactMethod.content}
-          </p>
-          {contactMethod.image}
+    <div
+      className={`w-full flex-grow grid grid-cols-1 md:grid-cols-3 gap-4 [&_div]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_div]:items-start [&_div]:border-2 [&_div]:rounded-lg [&_div]:p-2 [&_div]:bg-hero-heading-v2 [&_div]:border-black ${
+        className || ""
+      }`}
+    >
+      {companyStats.map((stat) => (
+        <div key={stat.key} className={stat.mainClassName}>
+          <p className={` ${stat.titleClassName}`}>{stat.title}</p>
+          <p className={` ${stat.contentClassName}`}>{stat.content}</p>
         </div>
       ))}
     </div>

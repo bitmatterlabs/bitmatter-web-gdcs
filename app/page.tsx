@@ -18,6 +18,7 @@ import { CallingGirl } from "./components/images/assets/callingGirl";
 import { ContactSection } from "./components/home/contactDetails";
 import { ChatBubbleBottomCenterTextIcon } from "./components/icons/chatBubbleBottomCenterText";
 import { CompanyStatsSection } from "./components/home/companyStats";
+import { OnlineBubble } from "./components/common/onlineBubble";
 
 const poppinsHeroTitle = Poppins({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ const poppinsHeroSubtitle = Poppins({
 
 const poppinsSectionTitle = Poppins({
   subsets: ["latin"],
-  weight: ["500"],
+  weight: ["700"],
   style: "normal",
   preload: true,
 });
@@ -94,19 +95,21 @@ export default function Home() {
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
           >
-            {/* <ShieldCheckIcon className="inline-block w-6 h-6 mr-2" /> */}
-            Limitless Possibilities
+            Services We Offer
           </SectionTitle>
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
-            Explore a spectrum of <span className="font-bold">services</span>{" "}
-            designed to shape your business destiny. From commercial and
-            industrial licensing to tapping into Dubai&apos;s booming tourism
-            industry, GDC Services equips you with the tools you need to thrive.
-            Your success story starts here.
+            Explore a spectrum of services{" "}
+            <span className="font-bold">
+              designed to shape your business destiny
+            </span>
+            . From commercial and industrial licensing to tapping into
+            Dubai&apos;s booming tourism industry, GDC Services equips you with
+            the tools you need to thrive. Your success story starts here.
           </SectionSubtitle>
           <SectionBody>
+
             <div className="grid grid-cols-4 gap-4 [&_div]:bg-[#ECEFF1] [&_div]:flex [&_div]:justify-between [&_div]:p-2 [&_div]:rounded-[0.375rem] [&_div]:border">
               <div>aas</div>
               <div>09</div>
@@ -189,8 +192,7 @@ export default function Home() {
       </Container>
       <Container id="company" className="bg-hero-heading-blue">
         <div className="flex flex-col items-center justify-start text-white py-navigation-height">
-          <SectionTitle className={`${poppinsSectionSubtitle.className}`}>
-            {/* <SparklesIcon className="inline-block w-6 h-6 mr-2" /> */}
+          <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
           </SectionTitle>
           <SectionSubtitle
@@ -201,22 +203,17 @@ export default function Home() {
             entrepreneurs to conquer challenges and seize opportunities. Join us
             to realize your business ambitions.
           </SectionSubtitle>
-          {/* <ExpandingLink
-            textClassName="border border-2 border-background"
-            href="#"
-            size={"md"}
-          >
-            Hi
-          </ExpandingLink> */}
           <SectionBody>
-            <CompanyStatsSection />
-            <p>
-              Meet the Visionaries: Behind GDC&apos;s success story stands a
-              dynamic team of experts and visionaries. Led by passionate leaders
-              with deep market insights, we&apos;re dedicated to simplifying
-              your business journey. Experience unmatched guidance and
-              commitment.
-            </p>
+            <CompanyStatsSection className="pb-4" />
+            <ExpandingLink
+              textClassName="border border-2 border-white"
+              iconClassName="fill-white"
+              color=""
+              href="/about"
+              size={"lg"}
+            >
+              Read more
+            </ExpandingLink>
           </SectionBody>
         </div>
       </Container>
@@ -230,10 +227,10 @@ export default function Home() {
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
-            Wherever you are, we&apos;re only a single phone call away. Give us
-            a ring when you&apos;re ready to take your business to the next
-            level.
+            We&apos;re always <OnlineBubble /> for you. Give us a ring when
+            you&apos;re ready to take your business to the next level.
           </SectionSubtitle>
+
           <SectionBody>
             <div className="flex flex-col-reverse items-center w-full space-y-5 md:flex-row-reverse md:space-y-0">
               <ContactSection />

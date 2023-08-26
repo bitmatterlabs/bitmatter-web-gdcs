@@ -41,13 +41,13 @@ const contactSubSections = [
   {
     key: "contact-2",
     link: true,
-    linkContent: "https://wa.me/97143703904",
+    linkContent: "https://wa.me/971585907657",
     title: "WhatsApp",
     mainClassName: "",
     titleClassName: "font-bold",
     image: <CommentAltMessageIcon color="" />,
     contentClassName: "",
-    content: "+971 4370 3904",
+    content: "+971 5859 07657",
   },
   {
     key: "contact-3",
@@ -64,7 +64,7 @@ const contactSubSections = [
 
 export const ContactSection = () => {
   return (
-    <div className="w-full flex-grow grid grid-cols-1 lg:grid-cols-2 gap-4 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:relative [&_a]:relative [&_div]:flex-col [&_a]:flex-col [&_div]:space-y-4 [&_a]:space-y-4 [&_div]:items-start [&_a]:items-start [&_a]:bg-[#ECEFF1] [&_a:hover]:bg-hero-heading-blue [&_div]:bg-[#ECEFF1] [&_div:hover]:bg-hero-heading-blue [&_div:hover]:text-white [&_a:hover]:text-white text-black [&_div]:justify-between [&_a]:justify-between [&_div]:p-2 [&_a]:p-2 [&_div]:rounded-[0.375rem] [&_a]:rounded-[0.375rem] font-medium [&_div]:border [&_a]:border [&_div]:overflow-hidden [&_a]:overflow-hidden [&_svg]:-bottom-6 [&_svg]:z-[0] [&_p]:z-[1] [&_svg]:fill-[#CFD8DC] [&_svg]:-right-5 [&_svg]:w-[10rem] [&_svg]:aspect-square [&_svg]:absolute">
+    <div className="w-full flex-grow grid grid-cols-1 lg:grid-cols-2 gap-4 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:relative [&_a]:relative [&_div]:flex-col [&_a]:flex-col [&_div]:space-y-4 [&_a]:space-y-4 [&_div]:items-start [&_a]:items-start [&_a]:bg-[#ECEFF1] [&_a:hover]:bg-hero-heading-blue [&_div]:bg-[#ECEFF1] [&_div:hover]:bg-hero-heading-blue [&_div:hover]:text-white [&_a:hover]:text-white text-black [&_div]:justify-between [&_a]:justify-between [&_div]:p-2 [&_a]:p-2 [&_div]:rounded-[0.375rem] [&_a]:rounded-[0.375rem] font-medium [&_div]:border [&_a]:border [&_div]:overflow-hidden [&_div]:min-h-[8rem] [&_a]:min-h-[8rem] [&_a]:overflow-hidden [&_svg]:-bottom-[3.5rem] [&_svg]:z-[0] [&_p]:z-[1] [&_svg]:fill-[#CFD8DC] [&_svg]:-right-5 [&_svg]:w-[10rem] [&_svg]:aspect-square [&_svg]:absolute">
       {contactSubSections.map((contactMethod) =>
         contactMethod.link ? (
           <Link
