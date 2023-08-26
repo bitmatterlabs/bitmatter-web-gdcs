@@ -13,7 +13,6 @@ export const MessengerIcon = ({
     viewBox={"0 0 " + 24 * scale + " " + 24 * scale}
     width={18 * scale}
     height={18 * scale}
-    id="facebook-messenger"
     className={"" + (className || "")}
     aria-label="messenger logo"
   >

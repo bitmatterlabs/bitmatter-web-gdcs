@@ -96,7 +96,7 @@ export default function Home() {
           className="absolute z-[2] scale-[1.1] md:scale-[1.2] lg:scale-[1.3] top-1/2 transform -translate-y-1/2 right-0 translate-x-[13rem] md:translate-x-[12rem] lg:translate-x-[10rem]"
         />
       </Container>
-      <Container id="services" className="bg-page-gradient-v2">
+      <Container className="bg-page-gradient-v2">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
@@ -189,7 +189,7 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      {/* <Container id="pricing" className="bg-page-gradient">
+      {/* <Container className="bg-page-gradient">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
@@ -233,7 +233,7 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container> */}
-      <Container id="company" className="bg-hero-heading-blue">
+      <Container className="bg-hero-heading-blue">
         <div className="flex flex-col items-center justify-start text-white py-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
@@ -260,7 +260,7 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container id="contact" className="bg-page-gradient">
+      <Container className="bg-page-gradient">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}

@@ -102,7 +102,6 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
       </head>
       <body
-        id="hero"
         className={
           "text-primary dark:text-primary-dark dark:bg-body-dark " +
           inter.className

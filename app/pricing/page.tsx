@@ -41,7 +41,6 @@ export default function Pricing() {
           <SectionBody>
             <div className="flex flex-col space-y-4">
               <div
-                id=""
                 className="w-full flex flex-col space-y-3 pt-navigation-height"
               >
                 <PageTitle>Why GDC Services?</PageTitle>

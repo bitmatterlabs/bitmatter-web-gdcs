@@ -13,9 +13,8 @@ export const EmailFooterIcon = ({
     viewBox={"0 0 " + 24 * scale + " " + 24 * scale}
     width={18 * scale}
     height={18 * scale}
-    id="instagram-alt"
     className={"" + (className || "")}
-    aria-label="instagram logo"
+    aria-label="email icon"
   >
     <g transform={`scale(${scale})`}>
       <path

@@ -13,7 +13,6 @@ export const WhatsappIcon = ({
     viewBox={"0 0 " + 24 * scale + " " + 24 * scale}
     width={18 * scale}
     height={18 * scale}
-    id="instagram-alt"
     className={"" + (className || "")}
     aria-label="whatsapp logo"
   >
