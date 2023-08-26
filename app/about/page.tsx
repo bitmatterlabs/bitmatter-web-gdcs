@@ -83,7 +83,7 @@ export default function About() {
                   At Growlytic, the leadership and the visionary along with this
                   highly enthusiastic team of professionals, have made this a
                   place where inspiration meets dedication and has successfully
-                  built a happy clientele. Well, that's the pride of the
+                  built a happy clientele. Well, that&apos;s the pride of the
                   Growlytic.
                 </p>
                 <p>
