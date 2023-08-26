@@ -20,7 +20,7 @@ const poppinsSectionTitle = Poppins({
 export default function Contact() {
   return (
     <>
-      <Container id="contact" className="bg-page-gradient">
+      <Container id="contact" className="bg-page-gradient-v2">
         <div className="flex flex-col items-center justify-start pb-navigation-height">
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
@@ -33,7 +33,6 @@ export default function Contact() {
             We&apos;re always <OnlineBubble /> for you. Reach us when
             you&apos;re ready to take your business to the next level.
           </SectionSubtitle>
-
           <SectionBody>
             <div className="flex flex-col-reverse items-center w-full space-y-5 md:flex-row-reverse md:space-y-0 pt-navigation-height">
               <ContactSection />

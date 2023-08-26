@@ -15,9 +15,9 @@ const expandingLinkClasses = cva(
   {
     variants: {
       size: {
-        sm: "text-sm font-semibold px-2 min-h-4",
-        md: "text-md font-semibold px-3 min-h-5",
-        lg: "text-lg font-semibold px-4 min-h-6",
+        sm: "text-sm font-semibold px-2 min-h-4 w-fit",
+        md: "text-md font-semibold px-3 py-1 min-h-5 w-fit",
+        lg: "text-lg font-semibold px-4 py-3 min-h-6 w-fit",
       },
     },
     defaultVariants: {
@@ -26,7 +26,7 @@ const expandingLinkClasses = cva(
   }
 );
 
-export const  ExpandingLink = ({
+export const ExpandingLink = ({
   children,
   linkClassName,
   iconClassName,
@@ -37,7 +37,7 @@ export const  ExpandingLink = ({
   return (
     <Link
       href={href}
-      className={expandingLinkClasses({ size }) + " " + (linkClassName || "")}
+      className={`${expandingLinkClasses({ size })} ${linkClassName || ""}`}
     >
       {children}{" "}
       <span>

@@ -24,7 +24,7 @@ const footerLinks = [
       { title: "About us", href: "/about", key: "head-1-link-0" },
       { title: "Why Choose GDC?", href: "/about#why", key: "head-1-link-1" },
       { title: "Team", href: "/about#team", key: "head-1-link-2" },
-      { title: "Contact us", href: "/contact", key: "head-1-link-2" },
+      { title: "Contact us", href: "/contact", key: "head-1-link-3" },
     ],
   },
   {

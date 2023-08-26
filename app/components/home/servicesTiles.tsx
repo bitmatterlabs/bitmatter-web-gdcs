@@ -1,4 +1,3 @@
-import { ArrowGrowthIcon } from "../icons/arrowGrowth";
 import { BuildingIcon } from "../icons/building";
 import { PlaneIcon } from "../icons/plane";
 import { ShieldCheckIcon } from "../icons/shieldCheck";
@@ -36,17 +35,17 @@ const licensingServices = [
 
 const companySetupOptions = [
   {
-    key: "licensing-0",
+    key: "companysetup-0",
     text: "Mainland Company Formation",
     icon: <MountainsIcon className="w-full" />,
   },
   {
-    key: "licensing-1",
+    key: "companysetup-1",
     text: "OffShore Company Formation",
     icon: <WavesIcon className="w-full" />,
   },
   {
-    key: "licensing-2",
+    key: "companysetup-2",
     text: "Freezone Company Formation",
     icon: <CellsIcon className="w-full" />,
   },
@@ -54,7 +53,7 @@ const companySetupOptions = [
 
 const visaOptions = [
   {
-    key: "licensing-0",
+    key: "visa-0",
     text: "10 Year UAE Golden Visa",
     icon: <PlaneIcon className="w-full" />,
   },
@@ -62,17 +61,17 @@ const visaOptions = [
 
 const vatTaxOptions = [
   {
-    key: "licensing-0",
+    key: "vat-0",
     text: "Management Consultancy",
     icon: <UserArrowsIcon className="w-full" />,
   },
   {
-    key: "licensing-1",
+    key: "vat-1",
     text: "Due Diligence and Business Valuation",
     icon: <FileSearchIcon className="w-full" />,
   },
   {
-    key: "licensing-2",
+    key: "vat-2",
     text: "Financial Consultancy",
     icon: <USDCircleIcon className="w-full" />,
   },

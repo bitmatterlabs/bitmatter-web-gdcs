@@ -6,10 +6,15 @@ import {
   SectionSubtitle,
   SectionTitle,
 } from "../components/common/sectionTitle";
-import { Team } from "../components/about/team";
 import { PageTitle } from "../components/common/pageTitle";
 import { BlueTickIcon } from "../components/icons/blueTick";
 import { ExpandingLink } from "../components/common/expandingLink";
+import {
+  CompanySetupTilesFull,
+  LicensingTilesFull,
+  VatTaxTilesFull,
+  VisaTilesFull,
+} from "../components/services/servicesTilesFull";
 
 const poppinsSectionTitle = Poppins({
   subsets: ["latin"],
@@ -21,7 +26,7 @@ const poppinsSectionTitle = Poppins({
 export default function Services() {
   return (
     <>
-      <Container className="bg-page-gradient">
+      <Container className="bg-page-gradient-v2">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
@@ -40,81 +45,102 @@ export default function Services() {
             thrive. Your success story starts here.
           </SectionSubtitle>
           <SectionBody>
-            <div className="flex flex-col space-y-4">
-              <div className="w-full flex flex-col space-y-3 pt-navigation-height">
-                <PageTitle>Why GDC Services?</PageTitle>
-                <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
-                  We&apos;re committed to help entrepreneurs set up business in
-                  Dubai, UAE
-                </p>
-                <p>
-                  The professionals at GDC offer comprehensive services in
-                  assisting businesses from startups to large businesses with
-                  the necessary legalities and other guidance to set up the
-                  business, develop as well as make a prominent presence in the
-                  UAE market, bet it Mainland, Freezone or the Offshore. Apart
-                  from the company formation procedures, Growlytic offers
-                  various Government Approvals such as municipality, RERA, Civil
-                  Defense, SERA Approval, National Media Council (NMC) Approvals
-                  etc. Growlytic also offers Instant Trade License with Virtual
-                  Office, PRO services, Tax & Legal Advisory Services, Visa &
-                  License Renewals, ISO Registration, Trademark & Attestation
-                  services and other necessary approvals from Dubai Regulatory
-                  Authorities.
-                </p>
-              </div>
-              <div className="w-full flex flex-col space-y-3">
-                <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
-                  We&apos;re known to be offering the best Company formation
-                  service in Dubai
-                </p>
-                <p>
-                  GDC is indeed proud to have assisted large number of customers
-                  providing them with customized corporate solutions to set up
-                  business in Dubai, UAE. It is a matter of pride to the
-                  organization to have made the life of entrepreneurs easier
-                  with the company formation assistance in UAE.
-                </p>
-              </div>
-              <div className="w-full flex flex-col space-y-3">
-                <PageTitle>Meet the Team</PageTitle>
-                <p>
-                  At Growlytic, the leadership and the visionary along with this
-                  highly enthusiastic team of professionals, have made this a
-                  place where inspiration meets dedication and has successfully
-                  built a happy clientele. Well, that&apos;s the pride of the
-                  Growlytic.
-                </p>
-                <p>
-                  With a vast exposure in the UAE market and expertise in
-                  business formation, the people behind this venture
-                  collectively work towards a common goal of customer
-                  satisfaction. It is the pledge of the management that any
-                  investor looking forward to set up a business in UAE under any
-                  jurisdiction, would be given the right guidance and be taken
-                  through the journey of company formation with simplified
-                  solutions.
-                </p>
-                <p>
-                  The Growlytic has been a success story as a result of the same
-                  enthusiasm they could carry with them at every step. The
-                  management still has plans to diversify and expand its reach
-                  in future, all for the convenience and easiness for its
-                  esteemed clientele.
-                </p>
-                <Team className="pt-3" />
-                <ExpandingLink
-                  linkClassName="border border-2 border-black w-fit"
-                  iconClassName="fill-black"
-                  color=""
-                  href="/contact"
-                  size={"lg"}
-                >
-                  Contact Us
-                </ExpandingLink>
-              </div>
+            <div id="licensing" className="pt-navigation-height">
+              <PageTitle extendedClassName="pb-3">Business Licensing</PageTitle>
+              <p className="pb-3">
+                If you&apos;re planning to conduct business in the UAE, securing
+                a business license is an essential step. The United Arab
+                Emirates offers four primary types of licenses: professional,
+                industrial, tourism, and commercial licenses. In Dubai, all
+                these significant license categories are accessible for
+                businesses.
+              </p>
+              <p className="pb-3">
+                You can effortlessly secure the perfect business license in the
+                UAE with Growlytic. We simplify the acquisition process for
+                professional, industrial, tourism, and commercial licenses.
+                Focus on your business while we handle the paperwork and
+                legalities.
+              </p>
+              <LicensingTilesFull />
+              <ExpandingLink
+                linkClassName="border border-2 border-black mb-6"
+                iconClassName="fill-black"
+                color=""
+                href="/pricing"
+                size={"md"}
+              >
+                Explore Pricing
+              </ExpandingLink>
+            </div>
+            <div id="company-setup" className="pt-navigation-height">
+              <PageTitle extendedClassName="pb-3">Company Setup</PageTitle>
+              <p className="pb-3">
+                Ready to turn your ideas into a flourishing enterprise? GDC
+                Services offers comprehensive solutions for company setup in
+                Dubai. Our expertise spans across jurisdictions, ensuring a
+                smooth journey as you establish your business presence.
+              </p>
+              <p className="pb-3">
+                At GDC Services, we specialize in efficient company formation
+                and setup solutions. Whether you&apos;re eyeing the mainland,
+                offshore, or freezone options, our experts have you covered.
+                Seamlessly establish your business presence in key UAE
+                locations. Our services encompass a wide spectrum of choices
+                tailored to your unique needs.
+              </p>
+              <CompanySetupTilesFull />
+              <ExpandingLink
+                linkClassName="border border-2 border-black mb-6"
+                iconClassName="fill-black"
+                color=""
+                href="/pricing"
+                size={"md"}
+              >
+                Explore Pricing
+              </ExpandingLink>
+            </div>
+            <div id="visa" className="pt-navigation-height">
+              <PageTitle extendedClassName="pb-3">Visa Services</PageTitle>
+              <p className="pb-3">
+                Settle into the future with confidence through UAE&apos;s
+                10-Year Golden Visa. Join the league of visionary investors, and
+                enjoy the freedom to thrive. GDC Services is your gateway to
+                securing a long-term residency that aligns with your business
+                ambitions.
+              </p>
+              <VisaTilesFull />
+              <ExpandingLink
+                linkClassName="border border-2 border-black mb-6"
+                iconClassName="fill-black"
+                color=""
+                href="/pricing"
+                size={"md"}
+              >
+                Explore Pricing
+              </ExpandingLink>
+            </div>
+            <div id="other" className="pt-navigation-height">
+              <PageTitle extendedClassName="pb-3">
+                VAT, Taxes & Other Services
+              </PageTitle>
+              <p className="pb-3">
+                Elevate your business potential with Growlytic&apos;s
+                comprehensive suite of services. From strategic management
+                consultancy and financial guidance to seamless process design,
+                trademark registration, and international tax planning &#8212;
+                our expert offerings empower your growth journey at every step.
+              </p>
+              <VatTaxTilesFull />
+              <ExpandingLink
+                linkClassName="border border-2 border-black mb-6"
+                iconClassName="fill-black"
+                color=""
+                href="/pricing"
+                size={"md"}
+              >
+                Explore Pricing
+              </ExpandingLink>
             </div>
           </SectionBody>
         </div>
@@ -125,27 +151,4 @@ export default function Services() {
       />
     </>
   );
-}
-
-{
-  /* 
-Virtual CFO Services
-Corporate Finance
-Mergers & Acquisition
-Accounting and Bookkeeping
-Outsourced Payroll Service
-Taxation
-Company Formation
-IFRS Impact Assessment
-ESR, UBO and AML Services
-Liquidation of Companies
-Legal and Structural Changes in Organization
-Trade Mark Registration
-Process Design and Implementation
-International Tax Planning and Structuring
-Corporate Training & Seminars
-NRI Tax Advisory
-Tax Residency Certificate
-Control Implementation and Monitoring
-     */
 }
