@@ -16,13 +16,8 @@ import {
 } from "./components/common/sectionTitle";
 import { CallingGirl } from "./components/images/assets/callingGirl";
 import { ContactSection } from "./components/home/contactDetails";
-import { ChatBubbleBottomCenterTextIcon } from "./components/icons/chatBubbleBottomCenterText";
 import { CompanyStatsSection } from "./components/home/companyStats";
 import { OnlineBubble } from "./components/common/onlineBubble";
-import { BuildingIcon } from "./components/icons/building";
-import { ArrowGrowthIcon } from "./components/icons/arrowGrowth";
-import { ShieldCheckIcon } from "./components/icons/shieldCheck";
-import { PlaneIcon } from "./components/icons/plane";
 import {
   CompanySetupTiles,
   LicensingTiles,
@@ -115,12 +110,12 @@ export default function Home() {
             <span className="font-bold">
               designed to shape your business destiny
             </span>
-            . From commercial and industrial licensing to tapping into
-            Dubai&apos;s booming tourism industry, GDC Services equips you with
-            the tools you need to thrive. Your success story starts here.
+            . From business licensing to tapping into Dubai&apos;s booming
+            tourism industry, GDC Services equips you with the tools you need to
+            thrive. Your success story starts here.
           </SectionSubtitle>
           <SectionBody>
-            <PageTitle extendedClassName="pb-3">Licensing</PageTitle>
+            <PageTitle extendedClassName="pb-3">Business Licensing</PageTitle>
             <p className="pb-3">
               Secure the perfect business license in the UAE with Growlytic. We
               simplify the acquisition process for professional, industrial,
@@ -154,7 +149,7 @@ export default function Home() {
             >
               Explore Company Setup Services
             </ExpandingLink>
-            <PageTitle extendedClassName="pb-3">Visa</PageTitle>
+            <PageTitle extendedClassName="pb-3">Visa Services</PageTitle>
             <p className="pb-3">
               Settle into the future with confidence through UAE&apos;s 10-Year
               Golden Visa. Join the league of visionary investors, and enjoy the
@@ -175,11 +170,11 @@ export default function Home() {
               VAT, Taxes & Other Services
             </PageTitle>
             <p className="pb-3">
-              Elevate your business potential with Growlytic&apos;s comprehensive
-              suite of services. From strategic management consultancy and
-              financial guidance to seamless process design, trademark
-              registration, and international tax planning &#8212; our expert
-              offerings empower your growth journey at every step.
+              Elevate your business potential with Growlytic&apos;s
+              comprehensive suite of services. From strategic management
+              consultancy and financial guidance to seamless process design,
+              trademark registration, and international tax planning &#8212; our
+              expert offerings empower your growth journey at every step.
             </p>
             <VatTaxTiles />
             <ExpandingLink
@@ -191,26 +186,6 @@ export default function Home() {
             >
               Explore VAT, Tax & Other Services
             </ExpandingLink>
-            {/* 
-Virtual CFO Services
-Corporate Finance
-Mergers & Acquisition
-Accounting and Bookkeeping
-Outsourced Payroll Service
-Taxation
-Company Formation
-IFRS Impact Assessment
-ESR, UBO and AML Services
-Liquidation of Companies
-Legal and Structural Changes in Organization
-Trade Mark Registration
-Process Design and Implementation
-International Tax Planning and Structuring
-Corporate Training & Seminars
-NRI Tax Advisory
-Tax Residency Certificate
-Control Implementation and Monitoring
-     */}
           </SectionBody>
         </div>
       </Container>
@@ -274,7 +249,7 @@ Control Implementation and Monitoring
           <SectionBody>
             <CompanyStatsSection className="pb-4" />
             <ExpandingLink
-              linkClassName="border border-2 border-white"
+              linkClassName="border border-2 border-white whitespace-nowrap truncate"
               iconClassName="fill-white"
               color=""
               href="/about"

@@ -15,9 +15,9 @@ const expandingLinkClasses = cva(
   {
     variants: {
       size: {
-        sm: "text-sm font-semibold px-2 h-4",
-        md: "text-md font-semibold px-3 h-5",
-        lg: "text-lg font-semibold px-4 h-6",
+        sm: "text-sm font-semibold px-2 min-h-4",
+        md: "text-md font-semibold px-3 min-h-5",
+        lg: "text-lg font-semibold px-4 min-h-6",
       },
     },
     defaultVariants: {

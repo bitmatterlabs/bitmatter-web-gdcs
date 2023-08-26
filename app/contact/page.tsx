@@ -30,7 +30,7 @@ export default function Contact() {
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium border-b border-black-a08`}
           >
-            We&apos;re always <OnlineBubble /> for you. Give us a ring when
+            We&apos;re always <OnlineBubble /> for you. Reach us when
             you&apos;re ready to take your business to the next level.
           </SectionSubtitle>
 

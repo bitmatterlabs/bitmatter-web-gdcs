@@ -26,22 +26,22 @@ export default function Services() {
           <SectionTitle
             className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
           >
-            Unlocking Possibilities
+            Services We Offer
           </SectionTitle>
           <SectionSubtitle
             className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium border-b border-black-a08`}
           >
+            Explore a spectrum of services{" "}
             <span className="font-bold">
-              Growlytic Documents Clearing Services
-            </span>{" "}
-            is a leading Business Consultant in UAE offering the best services
-            in helping aspiring entrepreneurs to set up business in Dubai, UAE.
-            Incepted in 2020, GDC has very well gained immense recognition and
-            has been one of the most preferred business solutions providers.
+              designed to shape your business destiny
+            </span>
+            . From business licensing to tapping into Dubai&apos;s booming
+            tourism industry, GDC Services equips you with the tools you need to
+            thrive. Your success story starts here.
           </SectionSubtitle>
           <SectionBody>
             <div className="flex flex-col space-y-4">
-              <div className="w-full flex flex-col space-y-3">
+              <div className="w-full flex flex-col space-y-3 pt-navigation-height">
                 <PageTitle>Why GDC Services?</PageTitle>
                 <p className="text-xl font-bold">
                   <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
@@ -125,4 +125,27 @@ export default function Services() {
       />
     </>
   );
+}
+
+{
+  /* 
+Virtual CFO Services
+Corporate Finance
+Mergers & Acquisition
+Accounting and Bookkeeping
+Outsourced Payroll Service
+Taxation
+Company Formation
+IFRS Impact Assessment
+ESR, UBO and AML Services
+Liquidation of Companies
+Legal and Structural Changes in Organization
+Trade Mark Registration
+Process Design and Implementation
+International Tax Planning and Structuring
+Corporate Training & Seminars
+NRI Tax Advisory
+Tax Residency Certificate
+Control Implementation and Monitoring
+     */
 }
