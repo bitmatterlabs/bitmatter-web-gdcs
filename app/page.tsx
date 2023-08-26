@@ -175,7 +175,7 @@ export default function Home() {
               VAT, Taxes & Other Services
             </PageTitle>
             <p className="pb-3">
-              Elevate your business potential with Growlytic's comprehensive
+              Elevate your business potential with Growlytic&apos;s comprehensive
               suite of services. From strategic management consultancy and
               financial guidance to seamless process design, trademark
               registration, and international tax planning &#8212; our expert
