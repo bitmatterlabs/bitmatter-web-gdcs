@@ -15,6 +15,7 @@ const creator = {
 };
 const githubActionsWorkflow = {
   isActionRunning: process.env.GITHUB_ACTIONS || false,
+  workflowName: process.env.GITHUB_WORKFLOW || "prod_deployment",
   repo: process.env.GITHUB_REPOSITORY?.toString().replace(
     new RegExp(`^${process.env.GITHUB_REPOSITORY_OWNER || ""}/`),
     ""
@@ -22,7 +23,9 @@ const githubActionsWorkflow = {
   repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
+  ? githubActionsWorkflow.workflowName === "prod_deployment"
+    ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
+    : ""
   : "https://gdcservices.ae";
 const appleTouchIcon = `${siteUrl}/favicon/apple-touch-icon.png`;
 const androidIcon512 = `${siteUrl}/favicon/android-chrome-512x512.png`;
@@ -86,7 +89,6 @@ export const metadata: Metadata = {
     description: description,
     images: androidIcon512,
   },
-
 };
 
 export default function RootLayout({
@@ -95,13 +97,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta name="robots" content="index, follow" />
       </head>
       <body
         className={
-          "text-primary bg-page-gradient dark:text-primary-dark dark:bg-body-dark " +
+          "text-primary dark:text-primary-dark dark:bg-body-dark " +
           inter.className
         }
       >

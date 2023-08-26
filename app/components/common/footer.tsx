@@ -1,55 +1,38 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { BitmatterFullIcon } from "../icons/bitmatterFull";
-import { MessengerIcon } from "../icons/messenger";
-import { InstagramIcon } from "../icons/instagram";
 import { WhatsappIcon } from "../icons/whatsapp";
 import { GrowlyticOldIcon } from "../icons/growlyticOld";
+import { PhoneFooterIcon } from "../icons/phoneFooter";
+import { EmailFooterIcon } from "../icons/emailFooter";
 
 const footerLinks = [
   {
-    title: "Product",
+    title: "Services",
     key: "head-0",
     links: [
-      { title: "Features", href: "#", key: "head-0-link-0" },
-      { title: "Integrations", href: "#", key: "head-0-link-1" },
-      { title: "Pricing", href: "#", key: "head-0-link-2" },
-      { title: "Changelog", href: "#", key: "head-0-link-3" },
-      { title: "Docs", href: "#", key: "head-0-link-4" },
-      { title: "Linear Method", href: "#", key: "head-0-link-5" },
-      { title: "Downloads", href: "#", key: "head-0-link-6" },
+      { title: "Licensing", href: "/services#licensing", key: "head-0-link-0" },
+      { title: "Company Setup", href: "/services#company-setup", key: "head-0-link-1" },
+      { title: "Visa", href: "/services#visa", key: "head-0-link-2" },
+      { title: "VAT, Tax & Others", href: "/services#other", key: "head-0-link-3" },
     ],
   },
   {
     title: "Company",
     key: "head-1",
     links: [
-      { title: "About us", href: "#", key: "head-1-link-0" },
-      { title: "Blog", href: "#", key: "head-1-link-1" },
-      { title: "Careers", href: "#", key: "head-1-link-2" },
-      { title: "Customers", href: "#", key: "head-1-link-3" },
-      { title: "Brand", href: "#", key: "head-1-link-4" },
+      { title: "About us", href: "/about", key: "head-1-link-0" },
+      { title: "Why Choose GDC?", href: "/about#why", key: "head-1-link-1" },
+      { title: "Team", href: "/about#team", key: "head-1-link-2" },
+      { title: "Contact us", href: "/contact", key: "head-1-link-3" },
     ],
   },
   {
-    title: "Resources",
+    title: "Pricing",
     key: "head-2",
     links: [
-      { title: "Community", href: "#", key: "head-2-link-0" },
-      { title: "Contact", href: "#", key: "head-2-link-1" },
-      { title: "DPA", href: "#", key: "head-2-link-2" },
-      { title: "Privacy Policy", href: "#", key: "head-2-link-3" },
-      { title: "Terms of service", href: "#", key: "head-2-link-4" },
-      { title: "Report a vulnerability", href: "#", key: "head-2-link-5" },
-    ],
-  },
-  {
-    title: "Developers",
-    key: "head-3",
-    links: [
-      { title: "API", href: "#", key: "head-3-link-1" },
-      { title: "Status", href: "#", key: "head-3-link-2" },
-      { title: "GitHub", href: "#", key: "head-3-link-3" },
+      { title: "Company Setup", href: "/services#company-setup-pricing", key: "head-2-link-0" },
+      { title: "Get a quotation", href: "/contact", key: "head-2-link-1" },
     ],
   },
 ];
@@ -58,26 +41,32 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear() || "2023";
 
   return (
-    <footer className="py-3 md:py-5 lg:py-6 text-sm border-t border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
+    <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
       <Container className="flex flex-col space-y-5">
-        <div className="flex flex-col justify-between lg:flex-row">
+        <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <div className="items-center space-x-2 flex flex-wrap">
+            <div className="flex flex-wrap items-center space-x-2 pb-3  mr-3 lg:mr-0">
               <GrowlyticOldIcon scale={0.12} color="#fff" />
-              <span className="font-normal text-lg block lg:hidden">
-                Growlytic Document Clearing Services
-              </span>
             </div>
-            <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
-              <Link href="#">
-                <MessengerIcon color="" />
-              </Link>
-              <Link href="#">
-                <InstagramIcon color="" />
-              </Link>
-              <Link href="#">
-                <WhatsappIcon color="" />
-              </Link>
+            <div className="flex flex-col justify-center space-y-2">
+              <p className="text-secondary-dark">
+                GDC Services, # 604,
+                <br />
+                A-Block, Business Village,
+                <br />
+                Near Diera Clock Tower, Dubai, UAE
+              </p>
+              <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
+                <Link href="mailto:growlyticservices@gmail.com">
+                  <EmailFooterIcon color="" />
+                </Link>
+                <Link href="tel:+97143703904">
+                  <PhoneFooterIcon className="stroke-secondary-dark hover:stroke-white" color="" />
+                </Link>
+                <Link href="https://wa.me/971585907657">
+                  <WhatsappIcon color="" />
+                </Link>
+              </div>
             </div>
           </div>
           <div className="flex flex-wrap">
@@ -103,7 +92,7 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="flex items-center w-full justify-center pt-3 text-slate-300 text-sm">
+        <div className="flex items-center justify-center w-full pt-3 text-sm text-slate-300">
           <span className="mr-1">
             &copy;{currentYear} GDC Services. Developed & hosted by{" "}
           </span>
