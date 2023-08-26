@@ -1,29 +1,11 @@
-export const ShieldCheckIcon = ({
-  className,
-  scale = 1,
-  color = "#040404",
-  strokeWidth = 0,
-}: {
-  className?: string;
-  scale?: number;
-  color?: string;
-  strokeWidth?: number;
-}) => (
+export const ShieldCheckIcon = ({ className }: { className?: string }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox={`0 0 ${24 * scale} ${24 * scale}`}
-    fill={color}
-    className={` ${className || ""}`}
-    aria-label="hyperlink icon"
-    stroke={color}
-    strokeWidth={strokeWidth}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={` ${className || "w-6 h-6"}`}
+    aria-label="right arrow icon"
   >
-    <g transform={`scale(${scale})`}>
-      <path
-        fill-rule="evenodd"
-        d="M12.516 2.17a.75.75 0 00-1.032 0 11.209 11.209 0 01-7.877 3.08.75.75 0 00-.722.515A12.74 12.74 0 002.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 00.374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 00-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08zm3.094 8.016a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
-        clip-rule="evenodd"
-      />
-    </g>
+    <path d="M19.63,3.65a1,1,0,0,0-.84-.2,8,8,0,0,1-6.22-1.27,1,1,0,0,0-1.14,0A8,8,0,0,1,5.21,3.45a1,1,0,0,0-.84.2A1,1,0,0,0,4,4.43v7.45a9,9,0,0,0,3.77,7.33l3.65,2.6a1,1,0,0,0,1.16,0l3.65-2.6A9,9,0,0,0,20,11.88V4.43A1,1,0,0,0,19.63,3.65ZM18,11.88a7,7,0,0,1-2.93,5.7L12,19.77,8.93,17.58A7,7,0,0,1,6,11.88V5.58a10,10,0,0,0,6-1.39,10,10,0,0,0,6,1.39ZM13.54,9.59l-2.69,2.7-.89-.9a1,1,0,0,0-1.42,1.42l1.6,1.6a1,1,0,0,0,1.42,0L15,11a1,1,0,0,0-1.42-1.42Z"></path>
   </svg>
 );

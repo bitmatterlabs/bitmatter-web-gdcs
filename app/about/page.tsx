@@ -9,6 +9,7 @@ import {
 import { Team } from "../components/about/team";
 import { PageTitle } from "../components/common/pageTitle";
 import { BlueTickIcon } from "../components/icons/blueTick";
+import { ExpandingLink } from "../components/common/expandingLink";
 
 const poppinsSectionTitle = Poppins({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function About() {
             Who are we?
           </SectionTitle>
           <SectionSubtitle
-            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
+            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium border-b border-black-a08`}
           >
             <span className="font-bold">
               Growlytic Documents Clearing Services
@@ -40,7 +41,7 @@ export default function About() {
           </SectionSubtitle>
           <SectionBody>
             <div className="flex flex-col space-y-4">
-              <div className="w-full flex flex-col space-y-3">
+              <div id="why" className="w-full flex flex-col space-y-3 pt-navigation-height">
                 <PageTitle>Why GDC Services?</PageTitle>
                 <p className="text-xl font-bold">
                   <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
@@ -62,8 +63,6 @@ export default function About() {
                   services and other necessary approvals from Dubai Regulatory
                   Authorities.
                 </p>
-              </div>
-              <div className="w-full flex flex-col space-y-3">
                 <p className="text-xl font-bold">
                   <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
                   We&apos;re known to be offering the best Company formation
@@ -77,7 +76,7 @@ export default function About() {
                   with the company formation assistance in UAE.
                 </p>
               </div>
-              <div className="w-full flex flex-col space-y-3">
+              <div id="team" className="w-full flex flex-col space-y-3 pt-navigation-height">
                 <PageTitle>Meet the Team</PageTitle>
                 <p>
                   At Growlytic, the leadership and the visionary along with this
@@ -104,11 +103,17 @@ export default function About() {
                   esteemed clientele.
                 </p>
                 <Team className="pt-3" />
+                <ExpandingLink
+                  linkClassName="border border-2 border-black w-fit"
+                  iconClassName="fill-black"
+                  color=""
+                  href="/contact"
+                  size={"lg"}
+                >
+                  Contact Us
+                </ExpandingLink>
               </div>
             </div>
-            {/* <div className="flex flex-col-reverse items-center w-full space-y-5 md:flex-row-reverse md:space-y-0">
-              ddd
-            </div> */}
           </SectionBody>
         </div>
       </Container>

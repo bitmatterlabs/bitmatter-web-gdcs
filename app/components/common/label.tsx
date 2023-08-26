@@ -14,7 +14,7 @@ export const Label = ({
     <div
       className={`flex items-center justify-center mx-auto w-fit h-fit ${
         className ||
-        "px-2 py-1 my-2 font-medium text-xs md:text-sm text-white bg-hero-heading-v2 border rounded-full shadow-md text-center"
+        "pl-3 pr-2 py-1 my-2 font-medium text-xs md:text-sm text-white bg-hero-heading-v2 border rounded-full shadow-md text-center"
       } ${extendClassName || ""}`}
     >
       {children}

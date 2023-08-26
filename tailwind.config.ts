@@ -31,6 +31,8 @@ const config: Config = {
           "radial-gradient(ellipse 80% 50% at 50% -10%,rgba(25, 118, 210, 0.3), transparent)",
         "page-gradient-dark":
           "radial-gradient(ellipse 80% 50% at 50% -25%,rgba(25, 118, 210, 1), rgb(0, 0, 0))",
+        "page-gradient-v2":
+          "radial-gradient(ellipse 80% 50% at 60% -30%,rgba(25, 118, 210, 0.3), transparent)",
         "slider-fade-right":
           "linear-gradient(to right,white 0%,rgba(255, 255, 255, 0) 100%)",
         "slider-fade-left":

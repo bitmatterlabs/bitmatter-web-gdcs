@@ -1,41 +1,38 @@
 import Link from "next/link";
 import { Container } from "./container";
 import { BitmatterFullIcon } from "../icons/bitmatterFull";
-import { MessengerIcon } from "../icons/messenger";
-import { InstagramIcon } from "../icons/instagram";
 import { WhatsappIcon } from "../icons/whatsapp";
 import { GrowlyticOldIcon } from "../icons/growlyticOld";
+import { PhoneFooterIcon } from "../icons/phoneFooter";
+import { EmailFooterIcon } from "../icons/emailFooter";
 
 const footerLinks = [
   {
     title: "Services",
     key: "head-0",
     links: [
-      { title: "Mainland", href: "#", key: "head-0-link-0" },
-      { title: "Offshore", href: "#", key: "head-0-link-1" },
-      { title: "Licensing", href: "#", key: "head-0-link-2" },
-      { title: "Startups", href: "#", key: "head-0-link-3" },
+      { title: "Licensing", href: "/services#licensing", key: "head-0-link-0" },
+      { title: "Company Setup", href: "/services#company-setup", key: "head-0-link-1" },
+      { title: "Visa", href: "/services#visa", key: "head-0-link-2" },
+      { title: "VAT, Tax & Others", href: "/services#other", key: "head-0-link-3" },
     ],
   },
   {
     title: "Company",
     key: "head-1",
     links: [
-      { title: "About us", href: "#", key: "head-1-link-0" },
-      { title: "Contact us", href: "#", key: "head-1-link-1" },
-      { title: "Management", href: "#", key: "head-1-link-2" },
+      { title: "About us", href: "/about", key: "head-1-link-0" },
+      { title: "Why Choose GDC?", href: "/about#why", key: "head-1-link-1" },
+      { title: "Team", href: "/about#team", key: "head-1-link-2" },
+      { title: "Contact us", href: "/contact", key: "head-1-link-2" },
     ],
   },
   {
-    title: "Resources",
+    title: "Pricing",
     key: "head-2",
     links: [
-      { title: "Community", href: "#", key: "head-2-link-0" },
-      { title: "Contact", href: "#", key: "head-2-link-1" },
-      { title: "DPA", href: "#", key: "head-2-link-2" },
-      { title: "Privacy Policy", href: "#", key: "head-2-link-3" },
-      { title: "Terms of service", href: "#", key: "head-2-link-4" },
-      { title: "Report a vulnerability", href: "#", key: "head-2-link-5" },
+      { title: "Company Setup", href: "/services#company-setup-pricing", key: "head-2-link-0" },
+      { title: "Get a quotation", href: "/contact", key: "head-2-link-1" },
     ],
   },
 ];
@@ -48,11 +45,8 @@ export const Footer = () => {
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <div className="flex flex-wrap items-center space-x-2">
+            <div className="flex flex-wrap items-center space-x-2 pb-3  mr-3 lg:mr-0">
               <GrowlyticOldIcon scale={0.12} color="#fff" />
-              <span className="hidden text-lg font-normal">
-                Growlytic Document Clearing Services
-              </span>
             </div>
             <div className="flex flex-col justify-center space-y-2">
               <p className="text-secondary-dark">
@@ -63,13 +57,13 @@ export const Footer = () => {
                 Near Diera Clock Tower, Dubai, UAE
               </p>
               <div className="flex space-x-3 [&_svg]:fill-secondary-dark [&_svg:hover]:fill-white items-center">
-                <Link href="#">
-                  <MessengerIcon color="" />
+                <Link href="mailto:growlyticservices@gmail.com">
+                  <EmailFooterIcon color="" />
                 </Link>
-                <Link href="#">
-                  <InstagramIcon color="" />
+                <Link href="tel:+97143703904">
+                  <PhoneFooterIcon className="stroke-secondary-dark hover:stroke-white" color="" />
                 </Link>
-                <Link href="#">
+                <Link href="https://wa.me/971585907657">
                   <WhatsappIcon color="" />
                 </Link>
               </div>

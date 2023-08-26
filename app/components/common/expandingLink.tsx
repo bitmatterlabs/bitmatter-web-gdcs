@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from "../icons/arrowUpRight";
 
 interface ExpandingLinkProps extends VariantProps<typeof expandingLinkClasses> {
   children: React.ReactNode;
-  textClassName?: string;
+  linkClassName?: string;
   iconClassName?: string;
   href: string;
   color?: string;
@@ -28,7 +28,7 @@ const expandingLinkClasses = cva(
 
 export const  ExpandingLink = ({
   children,
-  textClassName,
+  linkClassName,
   iconClassName,
   href = "",
   color,
@@ -37,7 +37,7 @@ export const  ExpandingLink = ({
   return (
     <Link
       href={href}
-      className={expandingLinkClasses({ size }) + " " + (textClassName || "")}
+      className={expandingLinkClasses({ size }) + " " + (linkClassName || "")}
     >
       {children}{" "}
       <span>
