@@ -278,9 +278,9 @@ const visaFullOptions = [
         <p>
           Long-term visa holders are free to stay abroad without time limits,
           enjoying unrestricted entry and exit. Major-General Mohammed Al Marri
-          of GDRFA-Dubai emphasizes the flexibility: "They can freely come in
+          of GDRFA-Dubai emphasizes the flexibility: &ldquo;They can freely come in
           and out of the country at their will, exempt from the rule of not
-          exceeding six consecutive months outside the UAE.
+          exceeding six consecutive months outside the UAE&rdquo;.
         </p>
       </>
     ),
