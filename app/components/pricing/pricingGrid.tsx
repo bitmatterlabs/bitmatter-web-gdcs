@@ -13,7 +13,7 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
       <div
         className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
       >
-        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -48,36 +48,46 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
               </span>
             </label>
           </div>
-          <div className="mt-2 mb-4">
-            <p className="text-6xl font-bold">
-              <span className="mr-1 text-2xl">AED</span>
+          <div className="mt-2 mb-4 flex justify-start items-center flex-wrap">
+            <span className="mr-1 text-[1rem] md:text-[1.2rem] font-bold mb-1">
+              AED
+            </span>
+            <p className="text-[2.5rem] md:text-[2.8rem] font-bold">
               {dplWithVisa ? "14,500" : "11,500"}
             </p>
           </div>
-          <div className="[&_p]:font-medium">
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              100% Ownership
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              Trade Lincense Cost
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              Trade Name Reservation
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">100% Ownership</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">Trade Lincense Cost</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow"> Trade Name Reservation</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">
               {dplWithVisa ? "MOA" : "UAE National Sponsorship"}
-            </p>
+            </div>
           </div>
         </div>
       </div>
       <div
         className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
       >
-        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -112,36 +122,43 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
               </span>
             </label>
           </div> */}
-          <div className="mt-6 mb-4">
-            <p className="text-6xl font-bold">
-              <span className="mr-1 text-2xl">AED</span>
-              13,500
-            </p>
+
+          <div className="mt-6 mb-4 flex justify-start items-center flex-wrap">
+            <span className="mr-1 text-[1rem] md:text-[1.2rem] font-bold mb-1">
+              AED
+            </span>
+            <p className="text-[2.5rem] md:text-[2.8rem] font-bold">13,500</p>
           </div>
-          <div className="[&_p]:font-medium">
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              100% Foreign Ownership
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              1 UAE Residence Visa
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              Pay in Two Easy Insallments
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              Dedicated Relationship Manager
-            </p>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">100% Foreign Ownership</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">1 UAE Residence Visa</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">Pay in Two Easy Insallments</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">Dedicated Relationship Manager</div>
           </div>
         </div>
       </div>
       <div
         className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
       >
-        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative md:h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -176,29 +193,39 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
               </span>
             </label>
           </div> */}
-          <div className="mt-6 mb-4">
-            <p className="text-6xl font-bold">
-              <span className="mr-1 text-2xl">AED</span>
-              8,500
-            </p>
+
+          <div className="mt-6 mb-4 flex justify-start items-center flex-wrap">
+            <span className="mr-1 text-[1rem] md:text-[1.2rem] font-bold mb-1">
+              AED
+            </span>
+            <p className="text-[2.5rem] md:text-[2.8rem] font-bold">8,500</p>
           </div>
-          <div className="[&_p]:font-medium">
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              100% Foreign Ownership
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              100% Tax Free
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
-              Any 3 Activities under One License
-            </p>
-            <p>
-              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">100% Foreign Ownership</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">100% Tax Free</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">Any 3 Activities under One License</div>
+          </div>
+          <div className="w-full flex justify-start">
+            <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
+              <BlueTickIcon />
+            </div>
+            <div className="flex-grow">
               No Paid-up Share Capital or Audit Requirements
-            </p>
+            </div>
           </div>
         </div>
       </div>
