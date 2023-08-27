@@ -42,21 +42,6 @@ export default function Pricing() {
           <SectionBody>
             <div id="" className="pt-navigation-height">
               <PageTitle extendedClassName="pb-3">Business Licensing</PageTitle>
-              <p className="pb-3">
-                If you&apos;re planning to conduct business in the UAE, securing
-                a business license is an essential step. The United Arab
-                Emirates offers four primary types of licenses: professional,
-                industrial, tourism, and commercial licenses. In Dubai, all
-                these significant license categories are accessible for
-                businesses.
-              </p>
-              <p className="pb-3">
-                You can effortlessly secure the perfect business license in the
-                UAE with Growlytic. We simplify the acquisition process for
-                professional, industrial, tourism, and commercial licenses.
-                Focus on your business while we handle the paperwork and
-                legalities.
-              </p>
               <LicensingPricing />
               <ExpandingLink
                 linkClassName="border border-2 border-black mb-6"

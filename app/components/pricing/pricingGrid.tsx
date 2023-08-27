@@ -1,103 +1,207 @@
-import { BuildingIcon } from "../icons/building";
-import { ShieldCheckIcon } from "../icons/shieldCheck";
-import { BackpackIcon } from "../icons/backpack";
+"use client";
+
+import { useState } from "react";
 import { BagAltIcon } from "../icons/bagAlt";
+import { BoltIcon } from "../icons/bolt";
 import { BlueTickIcon } from "../icons/blueTick";
 
-const licensingFullServices = [
-  {
-    key: "lf-0",
-    text: "Commercial License in Dubai, UAE",
-    description: (
-      <p>
-        Obtaining a commercial license in Dubai provides a versatile and
-        general-purpose business permit. This license type typically serves as
-        the standard option for new business applicants. Exceptions include
-        situations where a more suitable license type exists, such as for
-        professionals like architects offering consultancy services, industrial
-        operations like air conditioner manufacturing, or businesses in the
-        tourism sector like travel agencies.
-      </p>
-    ),
-    icon: <ShieldCheckIcon className="w-full" />,
-  },
-  {
-    key: "lf-1",
-    text: "Industrial License In Dubai, UAE",
-    description: (
-      <p>
-        For businesses engaged in industrial or manufacturing endeavors within
-        Dubai, holding an industrial license is essential. This license is
-        mandatory when a company undertakes the transformation of raw materials
-        into various manufactured goods and commodities, with the intent of
-        selling them for financial gain. Dubai&apos;s industrial company
-        formation adheres to specific regulations. Notably, factories engaged in
-        manufacturing-related operations are required to possess an industrial
-        license. A range of business activities is permissible under this
-        license category.
-      </p>
-    ),
-    icon: <BuildingIcon className="w-full" />,
-  },
-  {
-    key: "lf-3",
-    text: "Tourism License",
-    description: (
-      <>
-        <p className="mb-2">
-          Ranked as the fourth most visited destination globally, attracting
-          over 16 million annual visitors, Dubai stands as a dominant force in
-          the travel sector. Aspiring entrepreneurs stepping into this rapidly
-          expanding domain can seamlessly navigate the process of acquiring a
-          tourism license in Dubai with the expert guidance of Growlytic. At
-          Growlytic, we extend comprehensive support to enterprises within the
-          hospitality, travel, and tourism realms.
-        </p>
-        <p className="mb-2">
-          Our services encompass adept handling of documentation and meticulous
-          management of legal protocols throughout the license procurement
-          journey. Selecting the suitable type of tourism license is paramount
-          when establishing a business in Dubai.
-        </p>
-        <p className="mb-2">
-          The city offers three primary categories of tourism licenses:
-        </p>
-        <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
-          Inbound Tourism License
-        </p>
-        <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
-          Outbound Tourism License
-        </p>
-        <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
-          Travel Agent/Agency License
-        </p>
-      </>
-    ),
-    icon: <BackpackIcon className="w-full" />,
-  },
-];
-
 export const LicensingPricing = ({ className }: { className?: string }) => {
+  const [dplWithVisa, setDplWithVisa] = useState(false);
+
   return (
     <PricingGridContainer className={className}>
-      {licensingFullServices.map((license) => (
-        <div
-          key={license.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white p-2 rounded-[0.375rem] border`}
-        >
-          <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
-            <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
-              {license.icon}
-            </div>
-
-            <p className="font-semibold">{license.text}</p>
+      <div
+        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+      >
+        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <BagAltIcon className="fill-white" />
           </div>
-          {license.description}
+
+          <p className="font-bold text-white text-lg">
+            Dubai Mainland Professional License
+          </p>
+          <p className="absolute top-1 right-1 text-xs font-bold text-white bg-[#F44336] rounded-[0.25rem] px-[0.5rem] py-[0.2rem]">
+            MOST POPULAR
+          </p>
+          <BoltIcon
+            scale={6}
+            className="absolute aspect-square opacity-20 right-3 top-1/2 -translate-y-1/2"
+          />
         </div>
-      ))}
+        <div className="px-5 pb-5">
+          <div className="flex justify-between w-full items-center text-md">
+            <p className="font-medium text-sm">
+              {dplWithVisa ? "With Visa" : "Without Visa"}{" "}
+            </p>
+            <label className="inline-flex items-center space-x-4 cursor-pointer text-gray-100">
+              <span className="relative border-black">
+                <input
+                  id="Toggle1"
+                  type="checkbox"
+                  className="hidden peer"
+                  checked={dplWithVisa}
+                  onClick={() => setDplWithVisa((active) => !active)}
+                />
+                <div className="border w-[2.8rem] h-[1.6rem] rounded-full shadow-inner bg-[#B0BEC5] peer-checked:bg-[#66BB6A]  transition-colors duration-200"></div>
+                <div className="absolute right-auto left-[0.3rem] top-1/2 -translate-y-1/2 w-[1.1rem] aspect-square rounded-full shadow peer-checked:right-[0.3rem] peer-checked:left-auto bg-gray-800 transition-[left, right] duration-200"></div>
+              </span>
+            </label>
+          </div>
+          <div className="mt-2 mb-4">
+            <p className="text-6xl font-bold">
+              <span className="mr-1 text-2xl">AED</span>
+              {dplWithVisa ? "14,500" : "11,500"}
+            </p>
+          </div>
+          <div className="[&_p]:font-medium">
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              100% Ownership
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              Trade Lincense Cost
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              Trade Name Reservation
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              {dplWithVisa ? "MOA" : "UAE National Sponsorship"}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+      >
+        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <BagAltIcon className="fill-white" />
+          </div>
+
+          <p className="font-bold text-white text-lg">
+            General Trading + Ecommerce License
+          </p>
+          <p className="hidden absolute top-1 right-1 text-xs font-bold text-white bg-[#F44336] rounded-[0.25rem] px-[0.5rem] py-[0.2rem]">
+            MOST POPULAR
+          </p>
+          <BoltIcon
+            scale={6}
+            className="absolute aspect-square opacity-20 right-3 top-1/2 -translate-y-1/2"
+          />
+        </div>
+        <div className="px-5 pb-5">
+          {/* <div className="flex justify-between w-full items-center text-md">
+            <p className="font-medium text-sm">
+              {dplWithVisa ? "With Visa" : "Without Visa"}{" "}
+            </p>
+            <label className="inline-flex items-center space-x-4 cursor-pointer text-gray-100">
+              <span className="relative border-black">
+                <input
+                  id="Toggle1"
+                  type="checkbox"
+                  className="hidden peer"
+                  checked={dplWithVisa}
+                  onClick={() => setDplWithVisa((active) => !active)}
+                />
+                <div className="border w-[2.8rem] h-[1.6rem] rounded-full shadow-inner bg-[#B0BEC5] peer-checked:bg-[#66BB6A]  transition-colors duration-200"></div>
+                <div className="absolute right-auto left-[0.3rem] top-1/2 -translate-y-1/2 w-[1.1rem] aspect-square rounded-full shadow peer-checked:right-[0.3rem] peer-checked:left-auto bg-gray-800 transition-[left, right] duration-200"></div>
+              </span>
+            </label>
+          </div> */}
+          <div className="mt-6 mb-4">
+            <p className="text-6xl font-bold">
+              <span className="mr-1 text-2xl">AED</span>
+              13,500
+            </p>
+          </div>
+          <div className="[&_p]:font-medium">
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              100% Foreign Ownership
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              1 UAE Residence Visa
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              Pay in Two Easy Insallments
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              Dedicated Relationship Manager
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+      >
+        <div className="relative flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <BagAltIcon className="fill-white" />
+          </div>
+
+          <p className="font-bold text-white text-lg">
+            Offshore Business License
+          </p>
+          <p className="hidden absolute top-1 right-1 text-xs font-bold text-white bg-[#F44336] rounded-[0.25rem] px-[0.5rem] py-[0.2rem]">
+            MOST POPULAR
+          </p>
+          <BoltIcon
+            scale={6}
+            className="absolute aspect-square opacity-20 right-3 top-1/2 -translate-y-1/2"
+          />
+        </div>
+        <div className="px-5 pb-5">
+          {/* <div className="flex justify-between w-full items-center text-md">
+            <p className="font-medium text-sm">
+              {dplWithVisa ? "With Visa" : "Without Visa"}{" "}
+            </p>
+            <label className="inline-flex items-center space-x-4 cursor-pointer text-gray-100">
+              <span className="relative border-black">
+                <input
+                  id="Toggle1"
+                  type="checkbox"
+                  className="hidden peer"
+                  checked={dplWithVisa}
+                  onClick={() => setDplWithVisa((active) => !active)}
+                />
+                <div className="border w-[2.8rem] h-[1.6rem] rounded-full shadow-inner bg-[#B0BEC5] peer-checked:bg-[#66BB6A]  transition-colors duration-200"></div>
+                <div className="absolute right-auto left-[0.3rem] top-1/2 -translate-y-1/2 w-[1.1rem] aspect-square rounded-full shadow peer-checked:right-[0.3rem] peer-checked:left-auto bg-gray-800 transition-[left, right] duration-200"></div>
+              </span>
+            </label>
+          </div> */}
+          <div className="mt-6 mb-4">
+            <p className="text-6xl font-bold">
+              <span className="mr-1 text-2xl">AED</span>
+              8,500
+            </p>
+          </div>
+          <div className="[&_p]:font-medium">
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              100% Foreign Ownership
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              100% Tax Free
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              Any 3 Activities under One License
+            </p>
+            <p>
+              <BlueTickIcon className="inline-block w-4 aspect-square mr-1 mb-[0.2rem]" />
+              No Paid-up Share Capital or Audit Requirements
+            </p>
+          </div>
+        </div>
+      </div>
     </PricingGridContainer>
   );
 };
@@ -110,7 +214,11 @@ export const PricingGridContainer = ({
   className?: string;
 }) => {
   return (
-    <div className={` ${className || "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-3"}`}>
+    <div
+      className={` ${
+        className || "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-3"
+      }`}
+    >
       {children}
     </div>
   );
