@@ -41,11 +41,11 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear() || "2023";
 
   return (
-    <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 bg-body-dark text-primary-dark">
+    <footer className="py-3 text-sm md:py-5 lg:py-6 bg-primary text-primary-dark">
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <div className="flex flex-wrap items-center space-x-2 pb-3  mr-3 lg:mr-0">
+            <div className="flex flex-wrap items-center pb-3 mr-3 space-x-2 lg:mr-0">
               <GrowlyticOldIcon scale={0.12} color="#fff" />
             </div>
             <div className="flex flex-col justify-center space-y-2">
