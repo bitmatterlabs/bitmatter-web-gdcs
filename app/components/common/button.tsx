@@ -4,13 +4,14 @@ import { cva, VariantProps } from "class-variance-authority";
 interface ButtonProps extends VariantProps<typeof buttonClasses> {
   children: React.ReactNode;
   href: string;
+  className?: string;
 }
 
-const buttonClasses = cva("rounded-full inline-flex items-center", {
+const buttonClasses = cva("rounded-[0.375rem] inline-flex items-center", {
   variants: {
     variant: {
       primary:
-        "bg-gradient-button-v2 button-text-shadow hover:shadow-button dark:hover:shadow-button-dark text-white whitespace-nowrap transition-colors transition-opacity transition-shadow",
+        "bg-button-blue hover:shadow-button dark:hover:shadow-button-dark text-white hover:bg-button-blue-hover hover:text-button-text-hover whitespace-nowrap transition-colors transition-opacity transition-shadow focus:bg-button-blue-hover focus:text-button-text-hover focus:outline-none focus:shadow-button",
       secondary: "bg-gradient-button-primary",
       tertiery: "bg-gradient-button-primary",
     },
@@ -27,9 +28,18 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
   },
 });
 
-export const Button = ({ children, href, variant, size }: ButtonProps) => {
+export const Button = ({
+  children,
+  href,
+  variant,
+  size,
+  className,
+}: ButtonProps) => {
   return (
-    <Link href={href} className={buttonClasses({ variant, size })}>
+    <Link
+      href={href}
+      className={`${buttonClasses({ variant, size })} ${className || ""}`}
+    >
       {children}
     </Link>
   );
