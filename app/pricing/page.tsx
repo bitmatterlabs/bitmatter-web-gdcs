@@ -23,7 +23,7 @@ export default function Pricing() {
       <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Explore Our Service Pricing
           </SectionTitle>
@@ -55,7 +55,7 @@ export default function Pricing() {
             <div className="flex flex-col space-y-4">
               <div
                 id=""
-                className="w-full flex flex-col space-y-3 pt-navigation-height"
+                className="flex flex-col w-full space-y-3 pt-navigation-height"
               >
                 <PageTitle>Need Assistance?</PageTitle>
                 <p className="text-xl font-bold">
@@ -76,7 +76,7 @@ export default function Pricing() {
                 >
                   Contact Us
                 </ExpandingLink>
-                <p className="text-xl font-bold pt-3">Explore Our Services</p>
+                <p className="pt-3 text-xl font-bold">Explore Our Services</p>
                 <p>
                   Delve into the specifics of each service we provide by
                   visiting our dedicated services page. Discover the

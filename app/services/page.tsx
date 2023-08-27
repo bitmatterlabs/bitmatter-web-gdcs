@@ -28,7 +28,7 @@ export default function Services() {
       <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Services We Offer
           </SectionTitle>

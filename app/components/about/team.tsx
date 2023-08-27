@@ -43,7 +43,7 @@ const team = [
 export const Team = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`grid grid-cols-1 lg:grid-cols-3 gap-4 [&_div]:bg-[#ECEFF1] [&_div]:flex [&_div]:flex-col [&_div]:justify-start [&_div]:space-y-2 [&_div]:p-2 [&_div]:rounded-[0.375rem] ${
+      className={`grid grid-cols-1 lg:grid-cols-3 gap-4 [&_div]:bg-card-secondary [&_div]:text-white [&_div]:flex [&_div]:flex-col [&_div]:justify-start [&_div]:space-y-2 [&_div]:p-2 [&_div]:rounded-[0.375rem] ${
         className || ""
       }`}
     >

@@ -1,8 +1,8 @@
 export const TickIcon = ({
   className,
   scale = 1,
-  colorOuter = "#F57C00",
-  colorInner = "#F57C00",
+  colorOuter = "#6b544c",
+  colorInner = "#6b544c",
 }: {
   className?: string;
   scale?: number;
