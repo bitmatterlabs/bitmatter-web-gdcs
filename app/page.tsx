@@ -47,13 +47,6 @@ const poppinsSectionTitle = Poppins({
   preload: true,
 });
 
-const poppinsSectionSubtitle = Poppins({
-  subsets: ["latin"],
-  weight: ["400"],
-  style: "normal",
-  preload: true,
-});
-
 export default function Home() {
   return (
     <>
@@ -72,7 +65,10 @@ export default function Home() {
               className={`px-2 py-5 md:px-10 lg:px-20 text-[1rem] md:text-[1.1rem] lg:text-xl font-medium ${poppinsHeroSubtitle.className}`}
             >
               Empower Your Business with{" "}
-              <Link href="#company" className="group/link focus:outline-none">
+              <Link
+                href="#about-company"
+                className="group/link focus:outline-none"
+              >
                 <span className="font-[600] group-hover/link:text-[#90A4AE] group-focus/link:text-[#90A4AE]">
                   Growlytic Document Clearing Services
                 </span>
@@ -189,7 +185,7 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container className="bg-hero-heading-blue">
+      <Container id="about-company" className="bg-hero-heading-blue">
         <div className="flex flex-col items-center justify-start text-white py-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
