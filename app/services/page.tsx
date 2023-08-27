@@ -94,10 +94,10 @@ export default function Services() {
                 linkClassName="border border-2 border-black mb-6"
                 iconClassName="fill-black"
                 color=""
-                href="/pricing"
+                href="/contact"
                 size={"md"}
               >
-                Explore Pricing
+                Request Pricing
               </ExpandingLink>
             </div>
             <div id="visa" className="pt-navigation-height">
@@ -114,10 +114,10 @@ export default function Services() {
                 linkClassName="border border-2 border-black mb-6"
                 iconClassName="fill-black"
                 color=""
-                href="/pricing"
+                href="/contact"
                 size={"md"}
               >
-                Explore Pricing
+                Request Pricing
               </ExpandingLink>
             </div>
             <div id="other" className="pt-navigation-height">
@@ -136,10 +136,10 @@ export default function Services() {
                 linkClassName="border border-2 border-black mb-6"
                 iconClassName="fill-black"
                 color=""
-                href="/pricing"
+                href="/contact"
                 size={"md"}
               >
-                Explore Pricing
+                Request Pricing
               </ExpandingLink>
             </div>
           </SectionBody>

@@ -31,7 +31,7 @@ const footerLinks = [
     title: "Pricing",
     key: "head-2",
     links: [
-      { title: "Company Setup", href: "/services#company-setup-pricing", key: "head-2-link-0" },
+      { title: "Licensing", href: "/pricing", key: "head-2-link-0" },
       { title: "Get a quotation", href: "/contact", key: "head-2-link-1" },
     ],
   },

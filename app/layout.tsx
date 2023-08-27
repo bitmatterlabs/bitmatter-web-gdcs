@@ -23,9 +23,9 @@ const githubActionsWorkflow = {
   repoOwner: process.env.GITHUB_REPOSITORY_OWNER,
 };
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? githubActionsWorkflow.workflowName === "prod_deployment"
-    ? `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
-    : ""
+  ? githubActionsWorkflow.workflowName === "dev_deployment"
+    ? "https://gdcs.bitmatterlabs.com"
+    : `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
   : "https://gdcservices.ae";
 const appleTouchIcon = `${siteUrl}/favicon/apple-touch-icon.png`;
 const androidIcon512 = `${siteUrl}/favicon/android-chrome-512x512.png`;
