@@ -189,50 +189,6 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      {/* <Container className="bg-page-gradient">
-        <div className="flex flex-col items-center justify-start py-navigation-height">
-          <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
-          >
-            Our Pricing
-          </SectionTitle>
-          <SectionSubtitle
-            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
-          >
-            Explore a spectrum of services designed to shape your business
-            destiny. From commercial and industrial licensing to tapping into
-            Dubai&apos;s booming tourism industry, GDC Services equips you with
-            the tools you need to thrive. Your success story starts here.
-          </SectionSubtitle> *
-           <SectionBody>
-            <div className="grid grid-cols-4 gap-4 border">
-              <div className="border">01</div>
-              <div className="border">09</div>
-              <div className="border">01</div>
-              <div className="border">09</div>
-              <div className="border">01</div>
-              <div className="border">09</div>
-              <div className="border">01</div>
-            </div>
-            <p>
-              Company Setup: Title: &ldquo;Building Your Business Base&rdquo;
-              Description: &ldquo;Ready to turn your ideas into a flourishing
-              enterprise? GDC Services offers comprehensive solutions for
-              company setup in Dubai. Our expertise spans across jurisdictions,
-              ensuring a smooth journey as you establish your business
-              presence.&rdquo;
-            </p>{" "}
-            <p>
-              10 Year Visa: Title: &ldquo;Securing Your Future&rdquo;
-              Description: &ldquo;Settle into the future with confidence through
-              UAE&apos;s 10-Year Golden Visa. Join the league of visionary
-              investors, and enjoy the freedom to thrive. GDC Services is your
-              gateway to securing a long-term residency that aligns with your
-              business ambitions.&rdquo;
-            </p>
-          </SectionBody>
-        </div>
-      </Container> */}
       <Container className="bg-hero-heading-blue">
         <div className="flex flex-col items-center justify-start text-white py-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>

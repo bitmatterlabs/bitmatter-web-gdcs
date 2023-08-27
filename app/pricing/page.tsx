@@ -80,8 +80,8 @@ export default function Pricing() {
                 </p>
                 <p>
                   While this page might not list all service-specific packages,
-                  we're here to help. Contact us through your preferred method,
-                  and we'll provide you with the latest pricing information for
+                  we&apos;re here to help. Contact us through your preferred method,
+                  and we&apos;ll provide you with the latest pricing information for
                   each service we offer.
                 </p>
                 <ExpandingLink
