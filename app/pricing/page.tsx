@@ -10,6 +10,7 @@ import { Team } from "../components/about/team";
 import { PageTitle } from "../components/common/pageTitle";
 import { BlueTickIcon } from "../components/icons/blueTick";
 import { ExpandingLink } from "../components/common/expandingLink";
+import { LicensingPricing } from "../components/pricing/pricingGrid";
 
 const poppinsSectionTitle = Poppins({
   subsets: ["latin"],
@@ -39,81 +40,58 @@ export default function Pricing() {
             priority.
           </SectionSubtitle>
           <SectionBody>
+            <div id="" className="pt-navigation-height">
+              <PageTitle extendedClassName="pb-3">Business Licensing</PageTitle>
+              <LicensingPricing />
+              <ExpandingLink
+                linkClassName="border border-2 border-black mb-6"
+                iconClassName="fill-black"
+                color=""
+                href="/services#licensing"
+                size={"md"}
+              >
+                More Details on Licensing Services
+              </ExpandingLink>
+            </div>
+
             <div className="flex flex-col space-y-4">
               <div
+                id=""
                 className="w-full flex flex-col space-y-3 pt-navigation-height"
               >
-                <PageTitle>Why GDC Services?</PageTitle>
+                <PageTitle>Need Assistance?</PageTitle>
                 <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
-                  We&apos;re committed to help entrepreneurs set up business in
-                  Dubai, UAE
+                  Discover Latest Pricing Details
                 </p>
                 <p>
-                  The professionals at GDC offer comprehensive services in
-                  assisting businesses from startups to large businesses with
-                  the necessary legalities and other guidance to set up the
-                  business, develop as well as make a prominent presence in the
-                  UAE market, bet it Mainland, Freezone or the Offshore. Apart
-                  from the company formation procedures, Growlytic offers
-                  various Government Approvals such as municipality, RERA, Civil
-                  Defense, SERA Approval, National Media Council (NMC) Approvals
-                  etc. Growlytic also offers Instant Trade License with Virtual
-                  Office, PRO services, Tax & Legal Advisory Services, Visa &
-                  License Renewals, ISO Registration, Trademark & Attestation
-                  services and other necessary approvals from Dubai Regulatory
-                  Authorities.
+                  While this page might not list all service-specific packages,
+                  we&apos;re here to help. Contact us through your preferred method,
+                  and we&apos;ll provide you with the latest pricing information for
+                  each service we offer.
                 </p>
-              </div>
-              <div className="w-full flex flex-col space-y-3">
-                <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
-                  We&apos;re known to be offering the best Company formation
-                  service in Dubai
-                </p>
-                <p>
-                  GDC is indeed proud to have assisted large number of customers
-                  providing them with customized corporate solutions to set up
-                  business in Dubai, UAE. It is a matter of pride to the
-                  organization to have made the life of entrepreneurs easier
-                  with the company formation assistance in UAE.
-                </p>
-              </div>
-              <div className="w-full flex flex-col space-y-3">
-                <PageTitle>Meet the Team</PageTitle>
-                <p>
-                  At Growlytic, the leadership and the visionary along with this
-                  highly enthusiastic team of professionals, have made this a
-                  place where inspiration meets dedication and has successfully
-                  built a happy clientele. Well, that&apos;s the pride of the
-                  Growlytic.
-                </p>
-                <p>
-                  With a vast exposure in the UAE market and expertise in
-                  business formation, the people behind this venture
-                  collectively work towards a common goal of customer
-                  satisfaction. It is the pledge of the management that any
-                  investor looking forward to set up a business in UAE under any
-                  jurisdiction, would be given the right guidance and be taken
-                  through the journey of company formation with simplified
-                  solutions.
-                </p>
-                <p>
-                  The Growlytic has been a success story as a result of the same
-                  enthusiasm they could carry with them at every step. The
-                  management still has plans to diversify and expand its reach
-                  in future, all for the convenience and easiness for its
-                  esteemed clientele.
-                </p>
-                <Team className="pt-3" />
                 <ExpandingLink
-                  linkClassName="border border-2 border-black w-fit"
+                  linkClassName="border border-2 border-black mb-6"
                   iconClassName="fill-black"
                   color=""
                   href="/contact"
                   size={"lg"}
                 >
                   Contact Us
+                </ExpandingLink>
+                <p className="text-xl font-bold pt-3">Explore Our Services</p>
+                <p>
+                  Delve into the specifics of each service we provide by
+                  visiting our dedicated services page. Discover the
+                  comprehensive details you need to make informed decisions.
+                </p>
+                <ExpandingLink
+                  linkClassName="border border-2 border-black mb-6"
+                  iconClassName="fill-black"
+                  color=""
+                  href="/services"
+                  size={"lg"}
+                >
+                  Explore Services
                 </ExpandingLink>
               </div>
             </div>
