@@ -24,7 +24,7 @@ const githubActionsWorkflow = {
 };
 const siteUrl = githubActionsWorkflow.isActionRunning
   ? githubActionsWorkflow.workflowName === "dev_deployment"
-    ? "https://gdcs.bitmatterlabs.com/"
+    ? "https://gdcs.bitmatterlabs.com"
     : `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
   : "https://gdcservices.ae";
 const appleTouchIcon = `${siteUrl}/favicon/apple-touch-icon.png`;
