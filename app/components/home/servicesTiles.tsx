@@ -83,9 +83,9 @@ export const LicensingTiles = ({ className }: { className?: string }) => {
       {licensingServices.map((license) => (
         <div
           key={license.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white flex items-center justify-start p-2 rounded-[0.375rem] border [p_div]:overflow-hidden`}
+          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
-          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+          <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {license.icon}
           </div>
 
@@ -102,9 +102,9 @@ export const CompanySetupTiles = ({ className }: { className?: string }) => {
       {companySetupOptions.map((companySetup) => (
         <div
           key={companySetup.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white flex items-center justify-start p-2 rounded-[0.375rem] border [p_div]:overflow-hidden`}
+          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
-          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+          <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {companySetup.icon}
           </div>
 
@@ -121,9 +121,9 @@ export const VisaTiles = ({ className }: { className?: string }) => {
       {visaOptions.map((visa) => (
         <div
           key={visa.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white flex items-center justify-start p-2 rounded-[0.375rem] border [p_div]:overflow-hidden`}
+          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
-          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+          <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {visa.icon}
           </div>
 
@@ -140,9 +140,9 @@ export const VatTaxTiles = ({ className }: { className?: string }) => {
       {vatTaxOptions.map((vatService) => (
         <div
           key={vatService.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white flex items-center justify-start p-2 rounded-[0.375rem] border [p_div]:overflow-hidden`}
+          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
-          <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+          <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {vatService.icon}
           </div>
 

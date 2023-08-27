@@ -8,7 +8,7 @@ import {
 } from "../components/common/sectionTitle";
 import { Team } from "../components/about/team";
 import { PageTitle } from "../components/common/pageTitle";
-import { BlueTickIcon } from "../components/icons/blueTick";
+import { TickIcon } from "../components/icons/tick";
 import { ExpandingLink } from "../components/common/expandingLink";
 
 const poppinsSectionTitle = Poppins({
@@ -21,10 +21,10 @@ const poppinsSectionTitle = Poppins({
 export default function About() {
   return (
     <>
-      <Container className="bg-page-gradient-v2">
+      <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Who are we?
           </SectionTitle>
@@ -44,7 +44,7 @@ export default function About() {
               <div id="why" className="w-full flex flex-col space-y-3 pt-navigation-height">
                 <PageTitle>Why GDC Services?</PageTitle>
                 <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
+                  <TickIcon className="inline-block w-5 mr-1 aspect-square" />
                   We&apos;re committed to help entrepreneurs set up business in
                   Dubai, UAE
                 </p>
@@ -64,7 +64,7 @@ export default function About() {
                   Authorities.
                 </p>
                 <p className="text-xl font-bold">
-                  <BlueTickIcon className="inline-block w-5 mr-1 aspect-square" />
+                  <TickIcon className="inline-block w-5 mr-1 aspect-square" />
                   We&apos;re known to be offering the best Company formation
                   service in Dubai
                 </p>

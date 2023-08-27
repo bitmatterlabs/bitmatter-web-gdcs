@@ -50,16 +50,16 @@ const poppinsSectionTitle = Poppins({
 export default function Home() {
   return (
     <>
-      <Container className="relative overflow-x-hidden bg-page-gradient">
+      <Container className="relative overflow-x-hidden bg-page-primary">
         <div className="flex flex-col items-center justify-between min-h-[calc(100vh_-_var(--navigation-height))] px-10 md:px-20 lg:px-24">
           <div className="flex flex-col items-center justify-center flex-grow">
             <HeroTitle
               className={`py-5 [&_span]:text-transparent [&_span]:bg-clip-text pb-2 ${poppinsHeroTitle.className}`}
             >
-              <span className="bg-hero-heading-v2 dark:bg-hero-heading-dark">
+              <span className="bg-hero-heading-v2">
                 Let&apos;s grow your <br /> business,{" "}
               </span>
-              <span className="bg-hero-heading-blue">together</span>
+              <span className="bg-heading-primary">together</span>
             </HeroTitle>
             <HeroSubtitle
               className={`px-2 py-5 md:px-10 lg:px-20 text-[1rem] md:text-[1.1rem] lg:text-xl font-medium ${poppinsHeroSubtitle.className}`}
@@ -69,12 +69,12 @@ export default function Home() {
                 href="#about-company"
                 className="group/link focus:outline-none"
               >
-                <span className="font-[600] group-hover/link:text-[#90A4AE] group-focus/link:text-[#90A4AE]">
+                <span className="font-[600] group-hover/link:text-[#2e2f30] group-focus/link:text-[#2e2f30]">
                   Growlytic Document Clearing Services
                 </span>
                 <span className="">
                   <LinkIcon
-                    className="inline-block w-[1.9rem] h-[1.9rem] mb-[0.25rem] p-[0.2rem] group-hover/link:fill-[#90A4AE] group-focus/link:fill-[#90A4AE]"
+                    className="inline-block w-[1.9rem] h-[1.9rem] mb-[0.25rem] p-[0.2rem] group-hover/link:fill-[#2e2f30] group-focus/link:fill-[#2e2f30]"
                     strokeWidth={0.2}
                     color=""
                   />
@@ -92,10 +92,10 @@ export default function Home() {
           className="absolute z-[2] scale-[1.1] md:scale-[1.2] lg:scale-[1.3] top-1/2 transform -translate-y-1/2 right-0 translate-x-[13rem] md:translate-x-[12rem] lg:translate-x-[10rem]"
         />
       </Container>
-      <Container className="bg-page-gradient-v2">
+      <Container className="bg-page-primary-v2">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Services We Offer
           </SectionTitle>
@@ -185,13 +185,13 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container id="about-company" className="bg-hero-heading-blue">
-        <div className="flex flex-col items-center justify-start text-white py-navigation-height">
+      <Container id="about-company" className="bg-heading-primary">
+        <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
           </SectionTitle>
           <SectionSubtitle
-            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-normal`}
+            className={`text-[1rem] md:text-[1.1rem] lg:text-xl font-medium`}
           >
             GDC Services is your gateway to streamlined business setup in Dubai,
             UAE. Our journey since 2020 has been marked by enabling countless
@@ -201,8 +201,8 @@ export default function Home() {
           <SectionBody>
             <CompanyStatsSection className="pb-4" />
             <ExpandingLink
-              linkClassName="border border-2 border-white whitespace-nowrap truncate"
-              iconClassName="fill-white"
+              linkClassName="border border-2 border-black whitespace-nowrap truncate"
+              iconClassName="fill-black"
               color=""
               href="/about"
               size={"lg"}
@@ -212,10 +212,10 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container className="bg-page-gradient">
+      <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Get in touch
           </SectionTitle>

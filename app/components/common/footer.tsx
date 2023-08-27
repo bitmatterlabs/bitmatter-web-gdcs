@@ -41,7 +41,7 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear() || "2023";
 
   return (
-    <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 dark:border-white-a08 bg-body-dark text-primary-dark">
+    <footer className="py-3 text-sm border-t md:py-5 lg:py-6 border-black-a08 bg-body-dark text-primary-dark">
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">

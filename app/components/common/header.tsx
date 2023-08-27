@@ -11,7 +11,7 @@ export const Header = () => {
   const [hambergerMenuIsOpen, setHambergerMenuIsOpen] = useState(false);
 
   return (
-    <header className="z-[3] fixed top-0 left-0 w-full border-b border-black-a08 dark:border-white-a08 backdrop-blur-[13px] bg-white/25 dark:bg-background/25 font-medium">
+    <header className="z-[3] fixed top-0 left-0 w-full border-b border-black-a08 backdrop-blur-[13px] bg-white/25 font-medium">
       <Container className="flex items-center h-navigation-height">
         <Link
           href="/"
@@ -29,7 +29,7 @@ export const Header = () => {
         >
           <nav
             className={
-              "fixed lg:relative lg:top-0 lg:h-auto lg:w-auto lg:bg-transparent lg:dark:bg-transparent top-navigation-height left-0 w-full overflow-auto lg:overflow-hidden bg-white dark:bg-background lg:opacity-100 lg:transition-none transition-[opacity, transform, colors] duration-300 ease-in-out " +
+              "fixed lg:relative lg:top-0 lg:h-auto lg:w-auto lg:bg-transparent top-navigation-height left-0 w-full overflow-auto lg:overflow-hidden bg-background lg:opacity-100 lg:transition-none transition-[opacity, transform, colors] duration-300 ease-in-out " +
               (hambergerMenuIsOpen
                 ? "opacity-100 h-[calc(100vh_-_var(--navigation-height))]"
                 : "opacity-0 h-0")
@@ -37,7 +37,7 @@ export const Header = () => {
           >
             <ul
               className={
-                "ease-in flex flex-col lg:[&_a:focus]:bg-[#e1e8eb] [&_a:focus]:outline-none lg:flex-row lg:items-center h-full [&_a]:w-full [&_a]:flex [&_a]:items-center [&_a]:text-md lg:[&_a]:text-md [&_a]:truncate [&_a]:whitespace-nowrap [&_a:hover]:text-gray-500 [&_a]:font-medium [&_a]:h-navigation-height lg:[&_a]:h-fit lg:[&_a]:p-1 lg:[&_a]:rounded-lg lg:[&_a:hover]:bg-[#e1e8eb] dark:[&_a:hover]:text-gray-300 [&_li]:mx-8 lg:[&_li]:ml-3 lg:[&_li]:mr-0 [&_li]:border-b [&_li]:border-black-a08 lg:[&_li]:border-none lg:[&_a]:translate-y-0 lg:[&_a]:transition-colors [&_a]:-translate-y-6 [&_a]:transition-[colors,transform] duration-500 " +
+                "ease-in flex flex-col lg:[&_a:focus]:bg-[#e1e8eb] [&_a:focus]:outline-none lg:flex-row lg:items-center h-full [&_a]:w-full [&_a]:flex [&_a]:items-center [&_a]:text-md lg:[&_a]:text-md [&_a]:truncate [&_a]:whitespace-nowrap [&_a:hover]:text-gray-500 [&_a]:font-medium [&_a]:h-navigation-height lg:[&_a]:h-fit lg:[&_a]:p-1 lg:[&_a]:rounded-lg lg:[&_a:hover]:bg-[#e1e8eb] [&_li]:mx-8 lg:[&_li]:ml-3 lg:[&_li]:mr-0 [&_li]:border-b [&_li]:border-black-a08 lg:[&_li]:border-none lg:[&_a]:translate-y-0 lg:[&_a]:transition-colors [&_a]:-translate-y-6 [&_a]:transition-[colors,transform] duration-500 " +
                 (hambergerMenuIsOpen && "[&_a]:-translate-y-[0]")
               }
             >

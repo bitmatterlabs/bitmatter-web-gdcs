@@ -6,9 +6,7 @@ import {
   SectionSubtitle,
   SectionTitle,
 } from "../components/common/sectionTitle";
-import { Team } from "../components/about/team";
 import { PageTitle } from "../components/common/pageTitle";
-import { BlueTickIcon } from "../components/icons/blueTick";
 import { ExpandingLink } from "../components/common/expandingLink";
 import { LicensingPricing } from "../components/pricing/pricingGrid";
 
@@ -22,10 +20,10 @@ const poppinsSectionTitle = Poppins({
 export default function Pricing() {
   return (
     <>
-      <Container className="bg-page-gradient-v2">
+      <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Explore Our Service Pricing
           </SectionTitle>

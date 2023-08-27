@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { BagAltIcon } from "../icons/bagAlt";
 import { BoltIcon } from "../icons/bolt";
-import { BlueTickIcon } from "../icons/blueTick";
+import { TickIcon } from "../icons/tick";
 
 export const LicensingPricing = ({ className }: { className?: string }) => {
   const [dplWithVisa, setDplWithVisa] = useState(false);
@@ -11,9 +11,9 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
   return (
     <PricingGridContainer className={className}>
       <div
-        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+        className={`bg-hero-heading-v2 text-white rounded-[0.6rem] overflow-hidden shadow-md`}
       >
-        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-heading-primary">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -43,7 +43,7 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
                   checked={dplWithVisa}
                   onClick={() => setDplWithVisa((active) => !active)}
                 />
-                <div className="border w-[2.8rem] h-[1.6rem] rounded-full shadow-inner bg-[#B0BEC5] peer-checked:bg-[#66BB6A]  transition-colors duration-200"></div>
+                <div className="w-[2.8rem] h-[1.6rem] rounded-full shadow-inner bg-[#B0BEC5] peer-checked:bg-heading-primary  transition-colors duration-200"></div>
                 <div className="absolute right-auto left-[0.3rem] top-1/2 -translate-y-1/2 w-[1.1rem] aspect-square rounded-full shadow peer-checked:right-[0.3rem] peer-checked:left-auto bg-gray-800 transition-[left, right] duration-200"></div>
               </span>
             </label>
@@ -58,25 +58,25 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">100% Ownership</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">Trade Lincense Cost</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow"> Trade Name Reservation</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">
               {dplWithVisa ? "MOA" : "UAE National Sponsorship"}
@@ -85,9 +85,9 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
         </div>
       </div>
       <div
-        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+        className={`bg-hero-heading-v2 text-white rounded-[0.6rem] overflow-hidden shadow-md`}
       >
-        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-heading-primary">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -131,34 +131,34 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">100% Foreign Ownership</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">1 UAE Residence Visa</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">Pay in Two Easy Insallments</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">Dedicated Relationship Manager</div>
           </div>
         </div>
       </div>
       <div
-        className={`bg-[#F5F5F5] hover:bg-hero-heading-v2 hover:text-white rounded-[0.6rem] overflow-hidden shadow-md border`}
+        className={`bg-hero-heading-v2 text-white rounded-[0.6rem] overflow-hidden shadow-md`}
       >
-        <div className="relative md:h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-hero-heading-blue">
+        <div className="relative md:h-[12rem] flex items-center justify-start [p_div]:overflow-hidden mb-2 px-4 py-5 bg-heading-primary">
           <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
             <BagAltIcon className="fill-white" />
           </div>
@@ -203,25 +203,25 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
 
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">100% Foreign Ownership</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">100% Tax Free</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">Any 3 Activities under One License</div>
           </div>
           <div className="w-full flex justify-start">
             <div className="w-4 mr-1 mb-[0.1rem] flex-grow-0 flex-shrink-0">
-              <BlueTickIcon />
+              <TickIcon />
             </div>
             <div className="flex-grow">
               No Paid-up Share Capital or Audit Requirements

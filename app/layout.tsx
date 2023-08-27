@@ -101,12 +101,7 @@ export default function RootLayout({
       <head>
         <meta name="robots" content="index, follow" />
       </head>
-      <body
-        className={
-          "text-primary dark:text-primary-dark dark:bg-body-dark " +
-          inter.className
-        }
-      >
+      <body className={`text-primary bg-background ${inter.className}`}>
         <Header />
         <main className="pt-navigation-height">{children}</main>
         <Footer />

@@ -27,7 +27,7 @@ import { PathfinderUniteIcon } from "../icons/pathfinderUnite";
 import { BooksIcon } from "../icons/books";
 import { DesktopCloudAltIcon } from "../icons/desktopCloutAlt";
 import { MoneybagAltIcon } from "../icons/moneybagAlt";
-import { BlueTickIcon } from "../icons/blueTick";
+import { TickIcon } from "../icons/tick";
 
 const licensingFullServices = [
   {
@@ -105,15 +105,15 @@ const licensingFullServices = [
           The city offers three primary categories of tourism licenses:
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Inbound Tourism License
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Outbound Tourism License
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Travel Agent/Agency License
         </p>
       </>
@@ -129,19 +129,19 @@ const companySetupFullOptions = [
     description: (
       <>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Dubai Company Setup
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Sharjah Company Setup
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Abudhabi Company Setup
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Ajman Company Setup
         </p>
       </>
@@ -154,19 +154,19 @@ const companySetupFullOptions = [
     description: (
       <>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Dubai Offshore
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           RAK Offshore
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Ajman Offshore
         </p>
         <p className="mb-[0.2rem]">
-          <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+          <TickIcon className="inline-block w-4 mr-1 aspect-square" />
           Jabel Ali Offshore
         </p>
       </>
@@ -181,78 +181,78 @@ const companySetupFullOptions = [
         <div>
           <p className="font-semibold mb-[0.2rem]">Dubai Freezones</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             DMCC Freezone
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Jebel Ali Freezone (JAFZA)
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Dubai Silicon Oasis (DSO)
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Dubai Internet City (DIC)
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Dubai Airport Freezone (DAFZA)
           </p>
         </div>
         <div>
           <p className="font-semibold mb-[0.2rem]">Sharjah Free Zones</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Sharjah Media City
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Sharjah Airport Free Zone
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Hamriya Freezone
           </p>
         </div>
         <div>
           <p className="font-semibold mb-[0.2rem]">Abudhabi Free Zones</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Khalifa Industrial Zone
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Abudhabi Airport Freezone
           </p>
         </div>
         <div>
           <p className="font-semibold mb-[0.2rem]">Ajman Free Zones</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Ajman Freezone
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Ajman Media City
           </p>
         </div>
         <div>
           <p className="font-semibold mb-[0.2rem]">Fujairah Free Zone</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             IFZA
           </p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             Fujairah Freezone
           </p>
         </div>
         <div>
           <p className="font-semibold mb-[0.2rem]">RAK Free Zone</p>
           <p className="mb-[0.2rem]">
-            <BlueTickIcon className="inline-block w-4 mr-1 aspect-square" />
+            <TickIcon className="inline-block w-4 mr-1 aspect-square" />
             RAK Freezone
           </p>
         </div>
@@ -423,7 +423,7 @@ export const LicensingTilesFull = ({ className }: { className?: string }) => {
       {licensingFullServices.map((license) => (
         <div
           key={license.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white p-2 rounded-[0.375rem] border`}
+          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
             <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
@@ -449,7 +449,7 @@ export const CompanySetupTilesFull = ({
       {companySetupFullOptions.map((companySetup) => (
         <div
           key={companySetup.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white p-2 rounded-[0.375rem] border`}
+          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
             <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
@@ -471,7 +471,7 @@ export const VisaTilesFull = ({ className }: { className?: string }) => {
       {visaFullOptions.map((visa) => (
         <div
           key={visa.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white p-2 rounded-[0.375rem] border`}
+          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
             <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
@@ -497,7 +497,7 @@ export const VatTaxTilesFull = ({ className }: { className?: string }) => {
       {vatTaxFullOptions.map((vatService) => (
         <div
           key={vatService.key}
-          className={`bg-[#ECEFF1] hover:bg-hero-heading-v2 hover:text-white p-2 rounded-[0.375rem] border`}
+          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden">
             <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">

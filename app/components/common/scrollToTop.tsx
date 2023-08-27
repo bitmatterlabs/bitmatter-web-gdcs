@@ -32,7 +32,7 @@ export const ScrollToTop = ({ className, offSet = 0 }: { className?: string, off
   return (
     <button 
       onClick={scrollToTop}
-      className={`md:items-center md:justify-center overflow-hidden fixed rounded-[0.375rem] w-fit h-fit bg-background hidden ${
+      className={`md:items-center md:justify-center overflow-hidden fixed rounded-[0.375rem] w-fit h-fit bg-body-dark hidden ${
         showScrollToTop ? "md:flex" : ""
       } ${className || "bottom-2 right-2"}`}
     >
