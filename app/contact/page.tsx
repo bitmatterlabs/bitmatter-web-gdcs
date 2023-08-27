@@ -20,10 +20,10 @@ const poppinsSectionTitle = Poppins({
 export default function Contact() {
   return (
     <>
-      <Container className="bg-page-gradient-v2">
+      <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-hero-heading-blue bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Get in touch
           </SectionTitle>

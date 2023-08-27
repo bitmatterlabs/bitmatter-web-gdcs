@@ -34,10 +34,16 @@ const config: Config = {
         "page-gradient-v2":
           "radial-gradient(ellipse 80% 50% at 60% -30%,rgba(25, 118, 210, 0.3), transparent)",
         "slider-fade-right":
-          "linear-gradient(to right,white 0%,rgba(255, 255, 255, 0) 100%)",
+          "linear-gradient(to right, rgb(230, 190, 138) 0%,rgba(255, 255, 255, 0) 100%)",
         "slider-fade-left":
-          "linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%)",
-        "gradient-sub-heading": "linear-gradient(to right, #1f93ff, #8b5cf6)",
+          "linear-gradient(to right, rgb(230, 190, 138) 0%, rgba(255, 255, 255, 0) 100%)",
+        "gradient-sub-heading": "linear-gradient(to right, #1f93ff, #8b5cf6)", 
+
+        "page-primary":
+          "radial-gradient(ellipse 80% 50% at 50% -10%, rgba(245, 124, 0, 0.3), transparent)",
+        "page-primary-v2":
+          "radial-gradient(ellipse 80% 50% at 60% -30%, rgba(245, 124, 0, 0.3), transparent)",
+        "heading-primary": "linear-gradient(92.88deg, rgb(245, 124, 0), rgb(255, 160, 0))",	
       },
       fontSize: {
         "hero-heading": ["5rem", "1"],
@@ -45,7 +51,7 @@ const config: Config = {
       },
       colors: {
         transparent: "transparent",
-        background: "rgb(0, 2, 18)",
+        background: "rgb(230, 190, 138)",
         "black-a08": "rgba(0, 0, 0, 0.08)",
         "white-a08": "rgba(255, 255, 255, 0.08)",
         primary: "rgb(0, 0, 0)",
@@ -57,6 +63,8 @@ const config: Config = {
         "button-blue": "rgb(34 132 240/1);",
         "button-blue-hover": "rgb(59 130 246/1)",
         "button-text-hover": "rgb(241 245 249/1)",
+        "button-primary": "rgb(255, 160, 0);",
+        "button-primary-hover": "rgb(245, 124, 0)",
       },
       spacing: {
         0: "0",
@@ -71,7 +79,7 @@ const config: Config = {
         "navigation-height": "var(--navigation-height)",
       },
       boxShadow: {
-        button: "rgba(25, 118, 210, 0.5) 0px 1px 40px",
+        button: "rgba(255, 160, 0, 0.5) 0px 1px 40px",
         "button-dark": "rgba(25, 118, 210, 0.5) 0px 1px 40px",
       },
       animation: {
