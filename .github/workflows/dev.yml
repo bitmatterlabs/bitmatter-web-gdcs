@@ -1,4 +1,4 @@
-name: prod_deployment
+name: dev_deployment
 
 on:
   pull_request:

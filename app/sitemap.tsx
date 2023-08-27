@@ -11,7 +11,7 @@ const githubActionsWorkflow = {
 };
 
 const siteUrl = githubActionsWorkflow.isActionRunning
-  ? githubActionsWorkflow.workflowName === "prod_deployment"
+  ? githubActionsWorkflow.workflowName === "dev_deployment"
     ? "https://gdcs.bitmatterlabs.com/"
     : `https://${githubActionsWorkflow.repoOwner}.github.io/${githubActionsWorkflow.repo}`
   : "https://gdcservices.ae";
