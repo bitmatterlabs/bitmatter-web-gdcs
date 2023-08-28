@@ -15,6 +15,7 @@ const config: Config = {
         "page-primary-v2":
           "radial-gradient(ellipse 80% 50% at 60% -30%, #A6A08F, transparent)",
         "heading-primary": "linear-gradient(92.88deg, #6b544c, #4a332c)",
+      "heading-primary-v2": "linear-gradient(92.88deg, #ebc088 9.16%, #e0b47b 84.72%)",
         "heading-secondary": "linear-gradient(92.88deg, #000000, #000000)",
         "heading-tertiery":
           "linear-gradient(92.88deg, rgb(0, 0, 0) 9.16%, rgba(0, 0, 0, 0.8) 84.72%)",
@@ -26,9 +27,9 @@ const config: Config = {
           "linear-gradient(92.88deg, rgb(0, 0, 0) 9.16%, rgba(0, 0, 0, 0.8) 84.72%)",
         "card-pricing": "linear-gradient(92.88deg, #736049, #786a5b)",
         "slider-fade-right":
-          "linear-gradient(to right, #b09f89 0%,rgba(255, 255, 255, 0) 100%)",
+          "linear-gradient(to right, white 0%,rgba(255, 255, 255, 0) 100%)",
         "slider-fade-left":
-          "linear-gradient(to right, #b09f89 0%, rgba(255, 255, 255, 0) 100%)",
+          "linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%)",
       },
       fontSize: {
         "hero-heading": ["5rem", "1"],
@@ -36,7 +37,8 @@ const config: Config = {
       },
       colors: {
         transparent: "transparent",
-        background: "#b09f89",
+        background: "white",
+        // background: "#b09f89",
         "black-a08": "rgba(0, 0, 0, 0.08)",
         "white-a08": "rgba(255, 255, 255, 0.08)",
         primary: "rgb(0, 0, 0)",

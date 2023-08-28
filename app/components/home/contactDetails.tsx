@@ -58,7 +58,7 @@ const contactSubSections = [
     titleClassName: "font-bold text-xl",
     image: <PhoneIcon color="" />,
     contentClassName: "",
-    content: "+971 4370 3904",
+    content: "+971 0437 64904",
   },
 ];
 

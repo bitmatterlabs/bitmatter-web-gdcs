@@ -4,7 +4,6 @@ import { HeroSubtitle, HeroTitle } from "./components/home/hero";
 import { Container } from "./components/common/container";
 import { Poppins } from "next/font/google";
 import { BrandSlider } from "./components/home/brandSlider";
-import { Supergirl } from "./components/images/assets/supergirl";
 import { LinkIcon } from "./components/icons/link";
 import Link from "next/link";
 import { ExpandingLink } from "./components/common/expandingLink";
@@ -50,7 +49,7 @@ const poppinsSectionTitle = Poppins({
 export default function Home() {
   return (
     <>
-      <Container className="relative overflow-x-hidden bg-page-primary">
+      <Container className="relative overflow-x-hidden bg-page-primary-v2">
         <div className="flex flex-col items-center justify-between min-h-[calc(100vh_-_var(--navigation-height))] px-10 md:px-20 lg:px-24">
           <div className="flex flex-col items-center justify-center flex-grow">
             <HeroTitle
@@ -59,7 +58,7 @@ export default function Home() {
               <span className="bg-heading-tertiery">
                 Let&apos;s grow your <br /> business,{" "}
               </span>
-              <span className="bg-heading-primary">together</span>
+              <span className="bg-heading-primary-v2">together</span>
             </HeroTitle>
             <HeroSubtitle
               className={`px-2 py-5 md:px-10 lg:px-20 text-[1rem] md:text-[1.1rem] lg:text-xl font-medium ${poppinsHeroSubtitle.className}`}
@@ -87,13 +86,13 @@ export default function Home() {
           </div>
           <BrandSlider pauseOnHover={true} />
         </div>
-        <Supergirl
+        {/* <Supergirl
           scale={0.2}
           className="absolute z-[2] scale-[1.1] md:scale-[1.2] lg:scale-[1.3] top-1/2 transform -translate-y-1/2 right-0 translate-x-[13rem] md:translate-x-[12rem] lg:translate-x-[10rem]"
-        />
+        /> */}
       </Container>
       <Container className="bg-background">
-        <div className="flex flex-col items-center justify-start py-navigation-height">
+        <div className="flex flex-col items-center justify-start pt-navigation-height">
           <SectionTitle
             className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
@@ -174,7 +173,7 @@ export default function Home() {
             </p>
             <VatTaxTiles />
             <ExpandingLink
-              linkClassName="border border-2 border-black mb-6"
+              linkClassName="border border-2 border-black"
               iconClassName="fill-black"
               color=""
               href="/services#other"
@@ -186,7 +185,7 @@ export default function Home() {
         </div>
       </Container>
       <Container id="about-company" className="bg-background">
-        <div className="flex flex-col items-center justify-start py-navigation-height">
+        <div className="flex flex-col items-center justify-start pt-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
           </SectionTitle>
