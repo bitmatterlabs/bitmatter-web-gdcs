@@ -1,5 +1,5 @@
 import Image from "next/image";
-import UAE from "../../components/images/UAE_low.jpg";
+import UAE from "../../components/images/UAE.png";
 
 interface HeroProps {
   children: React.ReactNode;
