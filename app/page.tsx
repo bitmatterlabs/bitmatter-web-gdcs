@@ -56,7 +56,7 @@ export default function Home() {
             <HeroTitle
               className={`py-5 [&_span]:text-transparent [&_span]:bg-clip-text pb-2 ${poppinsHeroTitle.className}`}
             >
-              <span className="bg-hero-heading-v2">
+              <span className="bg-heading-tertiery">
                 Let&apos;s grow your <br /> business,{" "}
               </span>
               <span className="bg-heading-primary">together</span>
@@ -92,10 +92,10 @@ export default function Home() {
           className="absolute z-[2] scale-[1.1] md:scale-[1.2] lg:scale-[1.3] top-1/2 transform -translate-y-1/2 right-0 translate-x-[13rem] md:translate-x-[12rem] lg:translate-x-[10rem]"
         />
       </Container>
-      <Container className="bg-page-primary-v2">
+      <Container className="bg-background">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Services We Offer
           </SectionTitle>
@@ -185,7 +185,7 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container id="about-company" className="bg-heading-primary">
+      <Container id="about-company" className="bg-background">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle className={`${poppinsSectionTitle.className}`}>
             Our Story, Your Success
@@ -212,10 +212,10 @@ export default function Home() {
           </SectionBody>
         </div>
       </Container>
-      <Container className="bg-page-primary">
+      <Container className="bg-background">
         <div className="flex flex-col items-center justify-start py-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Get in touch
           </SectionTitle>

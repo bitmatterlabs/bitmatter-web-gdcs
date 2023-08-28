@@ -28,7 +28,7 @@ const companyStats = [
 export const CompanyStatsSection = ({ className }: { className?: string }) => {
   return (
     <div
-      className={`w-full text-white flex-grow grid grid-cols-1 md:grid-cols-3 gap-4 [&_div]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_div]:items-start [&_div]:border-2 [&_div]:rounded-lg [&_div]:p-2 [&_div]:bg-hero-heading-v2 [&_div]:border-black ${
+      className={`w-full text-white flex-grow grid grid-cols-1 md:grid-cols-3 gap-4 [&_div]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_div]:items-start [&_div]:rounded-lg [&_div]:p-2 [&_div]:bg-card-tertiery ${
         className || ""
       }`}
     >

@@ -24,7 +24,7 @@ export default function About() {
       <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height min-h-[calc(100vh_-_var(--navigation-height))]">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Who are we?
           </SectionTitle>
@@ -41,7 +41,7 @@ export default function About() {
           </SectionSubtitle>
           <SectionBody>
             <div className="flex flex-col space-y-4">
-              <div id="why" className="w-full flex flex-col space-y-3 pt-navigation-height">
+              <div id="why" className="flex flex-col w-full space-y-3 pt-navigation-height">
                 <PageTitle>Why GDC Services?</PageTitle>
                 <p className="text-xl font-bold">
                   <TickIcon className="inline-block w-5 mr-1 aspect-square" />
@@ -76,7 +76,7 @@ export default function About() {
                   with the company formation assistance in UAE.
                 </p>
               </div>
-              <div id="team" className="w-full flex flex-col space-y-3 pt-navigation-height">
+              <div id="team" className="flex flex-col w-full space-y-3 pt-navigation-height">
                 <PageTitle>Meet the Team</PageTitle>
                 <p>
                   At Growlytic, the leadership and the visionary along with this

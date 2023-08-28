@@ -23,7 +23,7 @@ export default function Contact() {
       <Container className="bg-page-primary">
         <div className="flex flex-col items-center justify-start pb-navigation-height">
           <SectionTitle
-            className={`text-transparent bg-heading-primary bg-clip-text ${poppinsSectionTitle.className}`}
+            className={`text-transparent bg-heading-secondary bg-clip-text ${poppinsSectionTitle.className}`}
           >
             Get in touch
           </SectionTitle>

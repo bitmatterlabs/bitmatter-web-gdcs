@@ -83,7 +83,7 @@ export const LicensingTiles = ({ className }: { className?: string }) => {
       {licensingServices.map((license) => (
         <div
           key={license.key}
-          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
+          className={`bg-card-secondary text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
           <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {license.icon}
@@ -102,7 +102,7 @@ export const CompanySetupTiles = ({ className }: { className?: string }) => {
       {companySetupOptions.map((companySetup) => (
         <div
           key={companySetup.key}
-          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
+          className={`bg-card-secondary text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
           <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {companySetup.icon}
@@ -121,7 +121,7 @@ export const VisaTiles = ({ className }: { className?: string }) => {
       {visaOptions.map((visa) => (
         <div
           key={visa.key}
-          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
+          className={`bg-card-secondary text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
           <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {visa.icon}
@@ -140,7 +140,7 @@ export const VatTaxTiles = ({ className }: { className?: string }) => {
       {vatTaxOptions.map((vatService) => (
         <div
           key={vatService.key}
-          className={`bg-hero-heading-v2 text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
+          className={`bg-card-secondary text-white flex items-center justify-start p-2 rounded-[0.375rem] [p_div]:overflow-hidden`}
         >
           <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
             {vatService.icon}

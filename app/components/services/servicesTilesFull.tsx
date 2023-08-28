@@ -423,10 +423,10 @@ export const LicensingTilesFull = ({ className }: { className?: string }) => {
       {licensingFullServices.map((license) => (
         <div
           key={license.key}
-          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
+          className={`bg-card-secondary text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
-            <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
               {license.icon}
             </div>
 
@@ -449,10 +449,10 @@ export const CompanySetupTilesFull = ({
       {companySetupFullOptions.map((companySetup) => (
         <div
           key={companySetup.key}
-          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
+          className={`bg-card-secondary text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
-            <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
               {companySetup.icon}
             </div>
 
@@ -471,10 +471,10 @@ export const VisaTilesFull = ({ className }: { className?: string }) => {
       {visaFullOptions.map((visa) => (
         <div
           key={visa.key}
-          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
+          className={`bg-card-secondary text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden mb-2">
-            <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
               {visa.icon}
             </div>
 
@@ -497,10 +497,10 @@ export const VatTaxTilesFull = ({ className }: { className?: string }) => {
       {vatTaxFullOptions.map((vatService) => (
         <div
           key={vatService.key}
-          className={`bg-hero-heading-v2 text-white p-2 rounded-[0.375rem]`}
+          className={`bg-card-secondary text-white p-2 rounded-[0.375rem]`}
         >
           <div className="flex items-center justify-start [p_div]:overflow-hidden">
-            <div className="w-6 mr-2 flex-shrink-0 flex-grow-0">
+            <div className="flex-grow-0 flex-shrink-0 w-6 mr-2">
               {vatService.icon}
             </div>
 

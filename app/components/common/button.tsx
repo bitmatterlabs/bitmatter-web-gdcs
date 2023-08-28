@@ -12,8 +12,8 @@ const buttonClasses = cva("rounded-[0.375rem] inline-flex items-center", {
     variant: {
       primary:
         "bg-button-primary hover:shadow-button text-white hover:bg-button-primary-hover hover:text-button-text-hover whitespace-nowrap transition-colors transition-opacity transition-shadow focus:bg-button-primary-hover focus:text-button-text-hover focus:outline-none focus:shadow-button",
-      secondary: "bg-gradient-button-primary",
-      tertiery: "bg-gradient-button-primary",
+      secondary: "bg-button-primary hover:shadow-button text-white hover:bg-button-primary-hover hover:text-button-text-hover whitespace-nowrap transition-colors transition-opacity transition-shadow focus:bg-button-primary-hover focus:text-button-text-hover focus:outline-none focus:shadow-button",
+      tertiery: "bg-button-primary hover:shadow-button text-white hover:bg-button-primary-hover hover:text-button-text-hover whitespace-nowrap transition-colors transition-opacity transition-shadow focus:bg-button-primary-hover focus:text-button-text-hover focus:outline-none focus:shadow-button",
     },
     size: {
       xs: "text-xs px-1 h-3",
