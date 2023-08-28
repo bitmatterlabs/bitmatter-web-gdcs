@@ -16,7 +16,7 @@ interface SectionBodyProps {
 export const SectionTitle = ({ children, className }: SectionElementProps) => {
   return (
     <h1
-      className={`text-3xl md:text-4xl lg:text-5xl text-left pt-5 pb-3 w-full md:w-[80vw] lg:w-[70vw] ${
+      className={`text-2xl md:text-4xl lg:text-5xl text-left pt-5 pb-3 w-full md:w-[80vw] lg:w-[70vw] ${
         className || ""
       }`}
     >
