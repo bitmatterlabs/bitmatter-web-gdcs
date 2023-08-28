@@ -52,7 +52,7 @@ const contactSubSections = [
   {
     key: "contact-3",
     link: true,
-    linkContent: "tel:+97143703904",
+    linkContent: "tel:+971043764904",
     title: "Phone",
     mainClassName: "",
     titleClassName: "font-bold text-xl",

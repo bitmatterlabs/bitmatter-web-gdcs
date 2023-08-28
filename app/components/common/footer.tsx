@@ -60,7 +60,7 @@ export const Footer = () => {
                 <Link href="mailto:growlyticservices@gmail.com">
                   <EmailFooterIcon color="" />
                 </Link>
-                <Link href="tel:+97143703904">
+                <Link href="tel:+971043764904">
                   <PhoneFooterIcon className="stroke-secondary-dark hover:stroke-white" color="" />
                 </Link>
                 <Link href="https://wa.me/971585907657">
