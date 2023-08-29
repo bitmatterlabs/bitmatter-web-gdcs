@@ -5,20 +5,21 @@ import { Container } from "./container";
 import { Button } from "./button";
 import { HambergerIcon } from "../icons/hamberger";
 import { useState } from "react";
-import { GrowlyticOldIcon } from "../icons/growlyticOld";
+import GDCS from "../images/GDCS.png";
+import Image from "next/image";
 
 export const Header = () => {
   const [hambergerMenuIsOpen, setHambergerMenuIsOpen] = useState(false);
 
   return (
-    <header className="z-[3] fixed top-0 left-0 w-full border-b border-black-a08 backdrop-blur-[13px] bg-white/25 font-medium">
+    <header className="z-[20] fixed top-0 left-0 w-full border-b border-black-a08 backdrop-blur-[13px] bg-white/30 font-medium">
       <Container className="flex items-center h-navigation-height">
         <Link
           href="/"
           onClick={() => setHambergerMenuIsOpen(false)}
-          className="focus:outline-none"
+          className="focus:outline-none w-[7rem]"
         >
-          <GrowlyticOldIcon scale={0.06} />
+          <Image className="object-contain" alt="GDC Services Logo" src={GDCS} priority />
         </Link>
 
         <div
@@ -37,7 +38,7 @@ export const Header = () => {
           >
             <ul
               className={
-                "ease-in flex flex-col lg:[&_a:focus]:bg-[#e1e8eb] [&_a:focus]:outline-none lg:flex-row lg:items-center h-full [&_a]:w-full [&_a]:flex [&_a]:items-center [&_a]:text-md lg:[&_a]:text-md [&_a]:truncate [&_a]:whitespace-nowrap [&_a:hover]:text-gray-500 [&_a]:font-medium [&_a]:h-navigation-height lg:[&_a]:h-fit lg:[&_a]:p-1 lg:[&_a]:rounded-lg lg:[&_a:hover]:bg-[#e1e8eb] [&_li]:mx-8 lg:[&_li]:ml-3 lg:[&_li]:mr-0 [&_li]:border-b [&_li]:border-black-a08 lg:[&_li]:border-none lg:[&_a]:translate-y-0 lg:[&_a]:transition-colors [&_a]:-translate-y-6 [&_a]:transition-[colors,transform] duration-500 " +
+                "ease-in flex flex-col lg:[&_a:focus]:bg-[#e1e8eb] [&_a:focus]:outline-none lg:flex-row lg:items-center h-full [&_a]:w-full [&_a]:flex [&_a]:items-center [&_a]:text-md lg:[&_a]:text-md [&_a]:truncate [&_a]:whitespace-nowrap [&_a:hover]:text-black [&_a]:font-medium [&_a]:h-navigation-height lg:[&_a]:h-fit lg:[&_a]:p-1 lg:[&_a]:rounded-lg lg:[&_a:hover]:bg-[#e1e8eb] [&_li]:mx-8 lg:[&_li]:ml-3 lg:[&_li]:mr-0 [&_li]:border-b [&_li]:border-black-a08 lg:[&_li]:border-none lg:[&_a]:translate-y-0 lg:[&_a]:transition-colors [&_a]:-translate-y-6 [&_a]:transition-[colors,transform] duration-500 " +
                 (hambergerMenuIsOpen && "[&_a]:-translate-y-[0]")
               }
             >
