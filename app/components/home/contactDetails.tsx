@@ -5,7 +5,7 @@ const contactSubSections = [
     key: "contact-0",
     link: false,
     linkContent: "",
-    title: "Address",
+    title: "Address:",
     mainClassName: "lg:col-span-2",
     titleClassName: "font-bold text-xl",
     contentClassName: "",
