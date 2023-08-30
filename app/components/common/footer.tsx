@@ -106,7 +106,7 @@ export const Footer = () => {
         </div>
         <div className="flex items-center justify-center w-full pt-3 text-sm text-slate-300">
           <span className="mr-1">
-            &copy;{currentYear} GDC Services. Developed & hosted by{" "}
+            &copy;{currentYear} GDC Services. Developed by{" "}
           </span>
           <Link
             href="https://bitmatterlabs.com"

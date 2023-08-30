@@ -202,8 +202,8 @@ export const LicensingPricing = ({ className }: { className?: string }) => {
           <div className="px-5 pb-5">
             {pack.visaToggle}
             <div
-              className={`flex flex-wrap items-center justify-start mt-${
-                pack.visaToggleVisible ? "2" : "6"
+              className={`flex flex-wrap items-center justify-start ${
+                pack.visaToggleVisible ? "pt-2" : "pt-[2rem]"
               } mb-4`}
             >
               <span className="mr-1 text-[1rem] md:text-[1.2rem] font-bold mb-1">
