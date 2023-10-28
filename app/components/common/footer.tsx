@@ -69,13 +69,13 @@ export const Footer = () => {
                 <Link href="mailto:growlyticservices@gmail.com">
                   <EmailFooterIcon color="" />
                 </Link>
-                <Link href="tel:+971043764904">
+                <Link href="tel:+971585992421">
                   <PhoneFooterIcon
                     className="stroke-secondary-dark hover:stroke-white"
                     color=""
                   />
                 </Link>
-                <Link href="https://wa.me/971585907657">
+                <Link href="https://wa.me/971585992421">
                   <WhatsappIcon color="" />
                 </Link>
               </div>
