@@ -42,18 +42,53 @@ const contactSubSections = [
   },
   {
     key: "contact-3",
-    link: true,
+    link: false,
     linkContent: "tel:+971043764904",
     title: "Contact us:",
     titleClassName: "font-bold text-xl",
     contentClassName: "",
-    content: "+971 0437 64904",
+    content: (
+      <span>
+        <Link
+          href="tel:+971043764904"
+          target="_blank"
+          rel="noreferrer noopener"
+          className=""
+        >
+          <p> +971 04 376 4904</p>
+        </Link>
+        <Link
+          href="tel:+971585992421"
+          target="_blank"
+          rel="noreferrer noopener"
+          className=""
+        >
+          <p> +971 58 599 2421</p>
+        </Link>
+        <Link
+          href="tel:+971585907657"
+          target="_blank"
+          rel="noreferrer noopener"
+          className=""
+        >
+          <p> +971 58 590 7657</p>
+        </Link>
+        <Link
+          href="tel:+971043703904"
+          target="_blank"
+          rel="noreferrer noopener"
+          className=""
+        >
+          <p> +971 04 370 3904</p>
+        </Link>
+      </span>
+    ),
   },
 ];
 
 export const ContactSection = () => {
   return (
-    <div className="w-full flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_a]:flex-col text-white font-medium [&_div]:overflow-hidden [&_div]:min-h-[8rem] [&_a]:min-h-[8rem] [&_a]:overflow-hidden [&_p]:z-[1]">
+    <div className="w-full flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_a]:flex-col text-white font-medium [&_div]:overflow-hidden [&_div]:min-h-[8rem] [&_a]:overflow-hidden [&_p]:z-[1]">
       {contactSubSections.map((contactMethod) => (
         <div key={contactMethod.key} className="">
           <p className={` ${contactMethod.titleClassName}`}>
