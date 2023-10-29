@@ -2,9 +2,10 @@ import Link from "next/link";
 import { Container } from "./container";
 import { BitmatterFullIcon } from "../icons/bitmatterFull";
 import { WhatsappIcon } from "../icons/whatsapp";
-import { GrowlyticOldIcon } from "../icons/growlyticOld";
+import GDCS from "../images/GDCS.png";
 import { PhoneFooterIcon } from "../icons/phoneFooter";
 import { EmailFooterIcon } from "../icons/emailFooter";
+import Image from "next/image";
 
 const footerLinks = [
   {
@@ -12,9 +13,17 @@ const footerLinks = [
     key: "head-0",
     links: [
       { title: "Licensing", href: "/services#licensing", key: "head-0-link-0" },
-      { title: "Company Setup", href: "/services#company-setup", key: "head-0-link-1" },
+      {
+        title: "Company Setup",
+        href: "/services#company-setup",
+        key: "head-0-link-1",
+      },
       { title: "Visa", href: "/services#visa", key: "head-0-link-2" },
-      { title: "VAT, Tax & Others", href: "/services#other", key: "head-0-link-3" },
+      {
+        title: "VAT, Tax & Others",
+        href: "/services#other",
+        key: "head-0-link-3",
+      },
     ],
   },
   {
@@ -45,8 +54,8 @@ export const Footer = () => {
       <Container className="flex flex-col space-y-5">
         <div className="flex flex-col justify-between pb-3 border-b border-white-a08 lg:flex-row">
           <div className="flex flex-row flex-wrap justify-between lg:flex-nowrap lg:mr-6 lg:flex-col">
-            <div className="flex flex-wrap items-center pb-3 mr-3 space-x-2 lg:mr-0">
-              <GrowlyticOldIcon scale={0.12} color="#fff" />
+            <div className="flex flex-wrap items-center pb-3 mr-3 space-x-2 lg:mr-0 w-[15rem]">
+              <Image className="object-contain" alt="GDC Services Logo" src={GDCS} priority />
             </div>
             <div className="flex flex-col justify-center space-y-2">
               <p className="text-secondary-dark">
@@ -60,10 +69,13 @@ export const Footer = () => {
                 <Link href="mailto:growlyticservices@gmail.com">
                   <EmailFooterIcon color="" />
                 </Link>
-                <Link href="tel:+97143703904">
-                  <PhoneFooterIcon className="stroke-secondary-dark hover:stroke-white" color="" />
+                <Link href="tel:+971585992421">
+                  <PhoneFooterIcon
+                    className="stroke-secondary-dark hover:stroke-white"
+                    color=""
+                  />
                 </Link>
-                <Link href="https://wa.me/971585907657">
+                <Link href="https://wa.me/971585992421">
                   <WhatsappIcon color="" />
                 </Link>
               </div>
@@ -94,7 +106,7 @@ export const Footer = () => {
         </div>
         <div className="flex items-center justify-center w-full pt-3 text-sm text-slate-300">
           <span className="mr-1">
-            &copy;{currentYear} GDC Services. Developed & hosted by{" "}
+            &copy;{currentYear} GDC Services. Developed by{" "}
           </span>
           <Link
             href="https://bitmatterlabs.com"

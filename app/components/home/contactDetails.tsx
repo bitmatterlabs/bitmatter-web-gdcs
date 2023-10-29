@@ -1,18 +1,25 @@
 import Link from "next/link";
-import { AtIcon } from "../icons/at";
-import { CommentAltMessageIcon } from "../icons/commentAltMessage";
-import { MailIcon } from "../icons/mail";
-import { PhoneIcon } from "../icons/phone";
+import { WhatsappIcon } from "../icons/whatsapp";
+import { PhoneFooterIcon } from "../icons/phoneFooter";
+import { EmailFooterIcon } from "../icons/emailFooter";
+import { AddressIcon } from "../icons/address";
 
 const contactSubSections = [
   {
     key: "contact-0",
     link: false,
     linkContent: "",
-    title: "Address",
+    contentType: "text",
+    title: "Address:",
     mainClassName: "lg:col-span-2",
     titleClassName: "font-bold text-xl",
-    image: <MailIcon color="" />,
+    titleIcon: (
+      <AddressIcon
+        className="opacity-100 grayscale-0 fill-white"
+        color=""
+        scale={1.3}
+      />
+    ),
     contentClassName: "",
     content: (
       <>
@@ -31,69 +38,141 @@ const contactSubSections = [
     key: "contact-1",
     link: true,
     linkContent: "mailto:growlyticservices@gmail.com",
-    title: "Inquiries",
-    mainClassName: "lg:col-span-2 ",
+    contentType: "text",
+    title: "Email us:",
     titleClassName: "font-bold text-xl",
-    image: <AtIcon color="" />,
+    titleIcon: (
+      <EmailFooterIcon
+        className="opacity-100 grayscale-0 fill-white"
+        color=""
+        scale={1.3}
+      />
+    ),
     contentClassName: "",
     content: "growlyticservices@gmail.com",
   },
   {
     key: "contact-2",
-    link: true,
+    link: false,
+    contentType: "html",
     linkContent: "https://wa.me/971585907657",
-    title: "WhatsApp",
-    mainClassName: "",
+    title: "WhatsApp:",
     titleClassName: "font-bold text-xl",
-    image: <CommentAltMessageIcon color="" />,
+    titleIcon: (
+      <WhatsappIcon
+        className="opacity-100 grayscale-0 fill-white"
+        color=""
+        scale={1.3}
+      />
+    ),
     contentClassName: "",
-    content: "+971 5859 07657",
+    content: (
+      <span>
+        <Link
+          href="https://wa.me/971585992421"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p> +971 58 599 2421</p>
+        </Link>
+        <Link
+          href="https://wa.me/971585907657"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p>+971 58 590 7657</p>
+        </Link>
+      </span>
+    ),
   },
   {
     key: "contact-3",
-    link: true,
-    linkContent: "tel:+97143703904",
-    title: "Phone",
-    mainClassName: "",
+    link: false,
+    contentType: "html",
+    linkContent: "tel:+971043764904",
+    title: "Contact us:",
     titleClassName: "font-bold text-xl",
-    image: <PhoneIcon color="" />,
+    titleIcon: (
+      <PhoneFooterIcon
+        className="opacity-100 grayscale-0 fill-white"
+        color="white"
+        scale={1.3}
+      />
+    ),
     contentClassName: "",
-    content: "+971 4370 3904",
+    content: (
+      <span>
+        {/* <Link
+          href="tel:+971043764904"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p> +971 04 376 4904</p>
+        </Link> */}
+        <Link
+          href="tel:+971585992421"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p> +971 58 599 2421</p>
+        </Link>
+        <Link
+          href="tel:+971585907657"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p> +971 58 590 7657</p>
+        </Link>
+        <Link
+          href="tel:+971043703904"
+          target="_blank"
+          rel="noreferrer noopener"
+          className="w-fit"
+        >
+          <p> +971 04 370 3904</p>
+        </Link>
+      </span>
+    ),
   },
 ];
 
 export const ContactSection = () => {
   return (
-    <div className="w-full flex-grow grid grid-cols-1 lg:grid-cols-2 gap-4 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:relative [&_a]:relative [&_div]:flex-col [&_a]:flex-col [&_div]:space-y-4 [&_a]:space-y-4 [&_div]:items-start [&_a]:items-start [&_a]:bg-card-tertiery [&_div]:bg-card-tertiery text-white [&_div]:justify-between [&_a]:justify-between [&_div]:p-2 [&_a]:p-2 [&_div]:rounded-[0.375rem] [&_a]:rounded-[0.375rem] font-medium [&_div]:overflow-hidden [&_div]:min-h-[8rem] [&_a]:min-h-[8rem] [&_a]:overflow-hidden [&_svg]:-bottom-[3.5rem] [&_svg]:z-[0] [&_p]:z-[1] [&_svg]:fill-white [&_svg]:opacity-20 [&_svg]:-right-5 [&_svg]:w-[10rem] [&_svg]:aspect-square [&_svg]:absolute">
-      {contactSubSections.map((contactMethod) =>
-        contactMethod.link ? (
-          <Link
-            href={contactMethod.linkContent}
-            key={contactMethod.key}
-            target="_blank"
-            rel="noreferrer noopener"
-            className={contactMethod.mainClassName}
-          >
+    <div className="w-full flex-grow grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 [&_div]:flex [&_a]:flex [&>p]:whitespace-nowrap [&_div]:flex-col [&_a]:flex-col text-white font-medium [&_div]:overflow-hidden [&_div]:min-h-[8rem] [&_a]:overflow-hidden [&_p]:z-[1]">
+      {contactSubSections.map((contactMethod) => (
+        <div key={contactMethod.key} className="">
+          <span className="flex flex-row items-center space-x-2">
+            {contactMethod.titleIcon}
             <p className={` ${contactMethod.titleClassName}`}>
               {contactMethod.title}
             </p>
+          </span>
+          {contactMethod.link ? (
+            <Link
+              href={contactMethod.linkContent}
+              key={contactMethod.key}
+              target="_blank"
+              rel="noreferrer noopener"
+              className=""
+            >
+              <p className={` ${contactMethod.contentClassName}`}>
+                {contactMethod.content}
+              </p>
+            </Link>
+          ) : contactMethod.contentType === "text" ? (
             <p className={` ${contactMethod.contentClassName}`}>
               {contactMethod.content}
             </p>
-            {contactMethod.image}
-          </Link>
-        ) : (
-          <div key={contactMethod.key} className={contactMethod.mainClassName}>
-            <p className={` ${contactMethod.titleClassName}`}>
-              {contactMethod.title}
-            </p>
-            <p className={` ${contactMethod.contentClassName}`}>
-              {contactMethod.content}
-            </p>
-            {contactMethod.image}
-          </div>
-        )
-      )}
+          ) : (
+            contactMethod.content
+          )}
+        </div>
+      ))}
     </div>
   );
 };

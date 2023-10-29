@@ -13,7 +13,7 @@ const companyStats = [
     mainClassName: "",
     titleClassName: "font-medium text-lg",
     contentClassName: "font-bold text-4xl",
-    content: "30+",
+    content: "100+",
   },
   {
     key: "cs-2",
