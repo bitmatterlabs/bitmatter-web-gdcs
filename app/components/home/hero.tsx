@@ -1,3 +1,6 @@
+import Image from "next/image";
+import UAE from "../../components/images/UAE.png";
+
 interface HeroProps {
   children: React.ReactNode;
   className?: string;
@@ -23,7 +26,10 @@ export const HeroTitle = ({ children, className }: HeroElementProps) => {
 
 export const HeroSubtitle = ({ children, className }: HeroElementProps) => {
   return (
-    <p className={"text-center " + (className || "")}>{children}</p>
+    <div className="flex flex-col flex-nowrap items-center justify-center lg:flex-row-reverse">
+      <div className="lg:w-[50rem] lg:mr-6 w-[20rem] mr-0 flex items-center justify-center"><Image className="object-contain" src={UAE} alt="UAE Logo" priority /></div>
+      <p className={`text-center lg:text-right ${className || ""}`}>{children}</p>
+    </div>
   );
 };
 

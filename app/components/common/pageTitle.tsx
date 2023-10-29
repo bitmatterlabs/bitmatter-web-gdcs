@@ -8,7 +8,7 @@ export const PageTitle = ({
   extendedClassName?: string;
 }) => {
   return (
-    <p className={` ${className || "text-3xl font-extrabold pt-3"} ${extendedClassName}`}>
+    <p className={` ${className || "text-2xl md:text-3xl font-extrabold pt-3"} ${extendedClassName}`}>
       {children}
     </p>
   );
